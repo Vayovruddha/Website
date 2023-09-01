@@ -1,0 +1,145 @@
+.mobile-hamburger{
+    display: none;
+  }
+  #mobile-nav{
+    display: none;
+  }
+  .overlay {
+    display: none;
+    height: 100vh;
+    height: calc(100vh - 10px);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.closebtn{
+    padding: 0px 1.4rem;
+    float: right;
+    color: #000;
+    text-decoration: none;
+}
+
+.overlay-content{
+    padding: 1rem 2rem;
+}
+.css-menu{
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.css-item ul{
+    list-style: none;
+}
+.css-item ul li{
+    padding: .5rem 0rem;
+    font-size: 1.2rem;
+}
+.css-item ul li a{
+    text-align: left;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 10px 10px 5px 10px;
+    border-radius: 10px;
+    transition: 0.4s all ease-in;
+}
+.css-item ul li a:hover{
+    background: #7a45b5;
+    color: #fff;
+}
+.css-mobile{
+    width: 100%;
+    display: block;
+    padding: 0.7rem 1.9rem;
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: none;
+    background-color: #000;
+    border: 1px solid #000;   
+    margin: 1rem 0 ;
+    transition: .2s ease-out;
+}
+@media screen and (max-width: 450px) {
+    .nav, .element{
+        display: none;
+    }
+    header{
+        padding: 5px 20px;
+    }
+    .mobile-hamburger{
+        display: block;
+      }
+      .css123 {
+        margin: 0px 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+    .head-h {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+    .card {
+        padding: 25px 30px;
+    }
+    .main{
+        flex-direction: column;
+        margin: 10px 20px;
+        gap: 4rem;
+        align-items: center;
+    }
+    .left{
+        position: relative;
+        top: 0;
+    }
+    .right{
+        width: calc(100% - 20px);
+    }
+    .image-l {
+        grid-template-columns: 1fr;
+    }
+    .css243 {
+        width: 100%;
+    }
+    .box, .box-1{
+        flex-direction: column;
+        gap: 1rem;
+        margin: 40px 0px 30px 0px;
+    }
+    .image-wapper {
+        margin: 0;
+    }
+    .css-flex-space{
+        font-size: .9rem;
+    }
+    .css-rt {
+        padding: 0px;
+    }
+    .gallery-main {
+        flex-direction: column;
+    }
+    .img-box {
+        width: 100%;
+    }
+    .css-footer-main {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+    }
+    .css-links {
+        width: 100%;
+    }
+    .css-account {
+        width: 100%;
+    }
+    .css-acc {
+        padding: 0.5rem;
+        font-size: 0.8rem;
+    }
+}

@@ -81,11 +81,7 @@ nav{
     border-radius: 10px;
     box-shadow: -2px 2px 70px -25px rgba(0,0,0,0.3);
 }
-.item-link:hover{
-    transform: translateY(-3px);
-}
 .menu-item:hover>.dropdown{
-    margin-top: 7px;
     opacity: 1;
     visibility: visible;
 }
@@ -106,8 +102,10 @@ header nav ul>li>.item-link:hover> .dropdown{
     display: block;
 }
 .element-btn{
-    padding: 12px 18px;
-    
+    padding: 12px 18px 8px 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.1rem;
     font-weight: bold;
     background-color: #7a45b5;
@@ -120,6 +118,12 @@ header nav ul>li>.item-link:hover> .dropdown{
 .element{
     margin: 10px;
 }
+.swiper-element{
+    padding-top: 60px;
+}
+.img_bg{
+    object-fit: cover;
+}
 /* ======================================donation-element====================== */
 .donation-element{
     padding: 100px 0px;
@@ -131,7 +135,7 @@ header nav ul>li>.item-link:hover> .dropdown{
    align-items:  center;
 }
 .head-h{
-    font-size: 52px;
+    font-size: 50px;
     font-weight: 450;
 }
 .css123 p{
@@ -307,9 +311,6 @@ header nav ul>li>.item-link:hover> .dropdown{
 .cs-789{
     margin-top: 20px;
 }
-.css-activity{
-    padding: 20px;
-}
 .image-wapper{
     padding: 15px;
     margin: 10px;
@@ -374,14 +375,33 @@ header nav ul>li>.item-link:hover> .dropdown{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     margin-bottom: 40px;
 }
+.css-flex-space{
+    margin-top: 10px;
+    display: flex;
+    font-size: .9rem;
+    justify-content: space-between;
+}
+.css-122-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 5px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    background-color: #c2c2c2;
+}
+.css-content{
+    padding: .5rem 0;
+}
 .css-I{
     width: 100%;
 }
 .css-765{
     font-weight: 500;
-    padding: 15px;
+    padding: 15px 15px 10px 15px;
     text-align: center;
     border-radius: 6px;
+    text-decoration: none;
     color: #fff;
     background: #3226d8;
 }

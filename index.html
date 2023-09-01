@@ -8,6 +8,7 @@
     <title>Vayovruddhala Charitable Trust</title>
     <link rel="shortcut icon" href="Images/logo-c.jpg">
     <link rel="stylesheet" href="assets\style.css">
+    <link rel="stylesheet" href="assets\mobile_style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </head>
@@ -24,7 +25,7 @@
                     <div class="charity">Charitable Trust</div>
                 </div>
             </a>
-            <nav>
+            <nav class="nav">
                 <ul class="unorder">
                     <li class="menu-item"><a href="#" class="item-link">Home</a></li>
                     <!-- <li class="menu-item"><a href="#" class="item-link">Programs</a></li> -->
@@ -63,6 +64,35 @@
                     <a href="#">Donate</a>
                 </div>
             </div>
+            <div class="mobile-hamburger">
+                <iconify-icon icon="iconamoon:menu-burger-horizontal-thin" onclick="openNav()"
+                    height="33px"></iconify-icon>
+            </div>
+            <div class="overlay" id="mobile-nav" style="width:100%;">
+                <a href="javascript:void(0)" class="closebtn" onclick="hidePopup()" style="font-size: 55px;">×</a>
+                <div class="overlay-content">
+                    <a href="#" class="logo">
+                        <img src="Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
+                        <div class="name">
+                            <div class="title">Vayovruddhala</div>
+                            <div class="charity">Charitable Trust</div>
+                        </div>
+                    </a>
+                    <div class="css-item">
+                        <ul>
+                            <li><a href="/index.html" class="css-a">Home</a></li>
+                            <li><a href="#" class="css-a">About</a></li>
+                            <li><a href="#" class="css-a css-h">Programs</a></li>
+                            <li><a href="#" class="css-a">Campaigns</a></li>
+                           
+                            <li><a href="#" class="b-button css-mobile-side">Volunteers</a></li>
+                            <li><a href="#"  class="s-button css-mobile-side">Sponsorships</a></li>
+                            <li><a href="#"  class="s-button css-mobile-side">FAQs</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </header>
         <!-- Swiper -->
         <div class="swiper-element">
@@ -71,22 +101,22 @@
                 grab-cursor="true" slides-per-view="auto">
 
                 <div class="swiper-slide review-slide">
-                    <img src="Images/img14.jpg" alt="image" width="100%" height="650">
+                    <img src="Images/img14.jpg" alt="image" class="img_bg" width="100%" height="650">
                 </div>
                 <div class="swiper-slide review-slide">
-                    <img src="Images/img13.jpg" alt="image" width="100%" height="650">
+                    <img src="Images/img13.jpg" alt="image" class="img_bg" width="100%" height="650">
                 </div>
                 <div class="swiper-slide review-slide">
-                    <img src="Images/img8.jpg" alt="image" width="100%" height="650">
+                    <img src="Images/img8.jpg" alt="image" class="img_bg" width="100%" height="650">
                 </div>
                 <div class="swiper-slide review-slide">
-                    <img src="Images/img6.jpg" alt="image" width="100%" height="650">
+                    <img src="Images/img6.jpg" alt="image" class="img_bg" width="100%" height="650">
                 </div>
                 <div class="swiper-slide review-slid">
-                    <img src="Images/img19.jpg" alt="" width="100%" height="650">
+                    <img src="Images/img19.jpg" alt="" class="img_bg" width="100%" height="650">
                 </div>
                 <div class="swiper-slide review-slide">
-                    <img src="Images/img12.jpg" alt="" width="100%" height="650">
+                    <img src="Images/img12.jpg" alt="" class="img_bg" width="100%" height="650">
                 </div>
             </swiper-container>
         </div>
@@ -263,38 +293,63 @@
                 <div class="gallery-main">
                     <div class="img-box">
                         <img src="Images/img14.jpg" alt="image" class="img-b css-I">
-                        <div class="css-765">
-                            <a href="../pages/eventOne.html">మరింత తెలుసుకొండి</a>
+                        <div class="css-content">
+                            <p>కార్యక్రమం పేరు...</p>
+                            <div class="css-flex-space">
+                                <div class="css-122-date">Sunday 20th 2022</div>
+                                <a class="css-765" href="../pages/event4.html">మరింత తెలుసుకొండి</a>
+                            </div>
                         </div>
                     </div>
                     <div class="img-box">
                         <img src="Images/img13.jpg" alt="image" class="img-b css-I">
-                        <div class="css-765">
-                            <a href="../pages/eventTwo.html">మరింత తెలుసుకొండి</a>
+                        <div class="css-content">
+                            <p>కార్యక్రమం పేరు...</p>
+                            <div class="css-flex-space">
+                                <div class="css-122-date">Sunday 20th 2022</div>
+                                <a class="css-765" href="../pages/event4.html">మరింత తెలుసుకొండి</a>
+                            </div>
                         </div>
                     </div>
                     <div class="img-box">
                         <img src="Images/img21.jpg" alt="image" class="img-b css-I">
-                        <div class="css-765">
-                            <a href="../pages/eventThree.html">మరింత తెలుసుకొండి</a>
+                        <div class="css-content">
+                            <p>కార్యక్రమం పేరు...</p>
+                            <div class="css-flex-space">
+                                <div class="css-122-date">Sunday 20th 2022</div>
+                                <a class="css-765" href="../pages/event4.html">మరింత తెలుసుకొండి</a>
+                            </div>
                         </div>
                     </div>
                     <div class="img-box">
                         <img src="Images/img17.jpg" alt="image" class="img-b css-I">
-                        <div class="css-765">
-                            <a href="../pages/event4.html">మరింత తెలుసుకొండి</a>
+                        <div class="css-content">
+                            <p>కార్యక్రమం పేరు...</p>
+                            <div class="css-flex-space">
+                                <div class="css-122-date">Sunday 20th 2022</div>
+                                <a class="css-765" href="../pages/event4.html">మరింత తెలుసుకొండి</a>
+                            </div>
                         </div>
+                       
                     </div>
                     <div class="img-box">
                         <img src="Images/img20.jpg" alt="image" class="img-b css-I">
-                        <div class="css-765">
-                            <a href="../pages/event5.html">మరింత తెలుసుకొండి</a>
+                        <div class="css-content">
+                            <p>కార్యక్రమం పేరు...</p>
+                            <div class="css-flex-space">
+                                <div class="css-122-date">Sunday 20th 2022</div>
+                                <a class="css-765" href="../pages/event4.html">మరింత తెలుసుకొండి</a>
+                            </div>
                         </div>
                     </div>
                     <div class="img-box">
                         <img src="Images/img19.jpg" alt="image" class="img-b css-I">
-                        <div class="css-765">
-                            <a href="../pages/event6.html">మరింత తెలుసుకొండి</a>
+                        <div class="css-content">
+                            <p>కార్యక్రమం పేరు...</p>
+                            <div class="css-flex-space">
+                                <div class="css-122-date">Sunday 20th 2022</div>
+                                <a class="css-765" href="../pages/event4.html">మరింత తెలుసుకొండి</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -319,73 +374,73 @@
                 <div class="css-links">
                     <div class="foot-css-125">
                         <h4>About us</h4>
-                            
-                                <ul>
-                                    <li>
-                                        <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                        <a href="#">Our mission</a>
-                                    </li>
-                                    <li>
-                                        <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                        <a href="#">Our vision</a>
-                                    </li>
-                                    <li>
-                                        <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                        <a href="#">finances</a>
-                                    </li>
-                                    <li>
-                                        <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                        <a href="#">FAQs</a>
-                                    </li>
-                                </ul>
+
+                        <ul>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">Our mission</a>
+                            </li>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">Our vision</a>
+                            </li>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">finances</a>
+                            </li>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">FAQs</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="css-links">
                     <div class="foot-css-125">
                         <h4>How we help</h4>
-                            <ul>
-                                <li>
-                                    <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                    <a href="#">Programs</a>
-                                </li>
-                                <li>
-                                    <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                    <a href="#">Campaigns</a>
-                                </li>
-                                <li>
-                                    <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                    <a href="#">Feeding old age</a>
-                                </li>
-                                <li>
-                                    <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
-                                    <a href="#">Sponsorships</a>
-                                </li>
-                            </ul>
+                        <ul>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">Programs</a>
+                            </li>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">Campaigns</a>
+                            </li>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">Feeding old age</a>
+                            </li>
+                            <li>
+                                <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+                                <a href="#">Sponsorships</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="css-account">
                     <h2>Account Details</h2>
                     <div class="css-acc">
-                       <div class="css-d">
-                        <h3 class="acc-d">Bank Name:</h3>
-                        <h3 class="acc-n">KARUR VYSYA BANK</h3>
-                       </div>
-                       <div class="css-d">
-                        <h3 class="acc-d">A/c Name:</h3>
-                        <h3 class="acc-n">Vavyovruddha Charitable Trust</h3>
-                       </div>
-                       <div class="css-d">
-                        <h3 class="acc-d">A/c name:</h3>
-                        <h3 class="acc-n">4857115000001291</h3>
-                       </div>
-                       <div class="css-d">
-                        <h3 class="acc-d">IFSC Code:</h3>
-                        <h3 class="acc-n">KVBL0004857</h3>
-                       </div>
-                       <div class="css-d">
-                        <h3 class="acc-d">Branch:</h3>
-                        <h3 class="acc-n">Vijayawada, Satyanarayanapuram</h3>
-                       </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">Bank Name:</h3>
+                            <h3 class="acc-n">KARUR VYSYA BANK</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">A/c Name:</h3>
+                            <h3 class="acc-n">Vavyovruddha Charitable Trust</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">A/c name:</h3>
+                            <h3 class="acc-n">4857115000001291</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">IFSC Code:</h3>
+                            <h3 class="acc-n">KVBL0004857</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">Branch:</h3>
+                            <h3 class="acc-n">Vijayawada, Satyanarayanapuram</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -400,7 +455,15 @@
 
 
 
-
+        <script>
+            function openNav() {
+                document.getElementById("mobile-nav").style.width = "80%";
+                document.getElementById("mobile-nav").style.display = "block";
+            }
+            function hidePopup() {
+                document.getElementById("mobile-nav").style.width = "0%";
+            }
+        </script>
 
 
         <!-- Swiper JS -->
