@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vayovruddhala Charitable Trust</title>
     <link rel="shortcut icon" href="../Images/logo-c.jpg" />
+    <link rel="stylesheet" href="../assets/mobile_style.css" />
     <link rel="stylesheet" href="../assets/pages.css" />
     <!-- <link rel="stylesheet" href="../assets/style.css" /> -->
     <link
@@ -13,76 +14,97 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    
+
+    <script>
+      function openNav() {
+          document.getElementById("mobile-nav").style.width = "80%";
+          document.getElementById("mobile-nav").style.display = "block";
+      }
+      function hidePopup() {
+          document.getElementById("mobile-nav").style.width = "0%";
+      }
+  </script>
   </head>
 
   <body>
     <header>
       <a href="#" class="logo">
-        <img
-          src="../Images/logo-c.jpg"
-          alt="logo"
-          width="50px"
-          height="50px"
-          class="img-l"
-        />
-        <div class="name">
-          <div class="title">Vayovruddhala</div>
-          <div class="charity">Charitable Trust</div>
-        </div>
+          <img src="../Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
+          <div class="name">
+              <div class="title">Vayovruddhala</div>
+              <div class="charity">Charitable Trust</div>
+          </div>
       </a>
-      <nav>
-        <ul class="unorder">
-          <li class="menu-item"><a href="../index.html" class="item-link">Home</a></li>
-          <!-- <li class="menu-item"><a href="#" class="item-link">Programs</a></li> -->
-          <li class="menu-item">
-            <a href="#" class="item-link link-hover"
-              >About<span class="sub-arrow"
-                ><iconify-icon
-                  icon="material-symbols:keyboard-arrow-down-rounded"
-                ></iconify-icon></span
-            ></a>
-            <ul class="dropdown">
-              <li class="sub-menu"><a href="#">Our mission</a></li>
-              <li class="sub-menu"><a href="#">Our Vision</a></li>
-              <li class="sub-menu"><a href="#">finances</a></li>
-              <li class="sub-menu"><a href="#">FAQ's</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="item-link"
-              >How we help<span class="sub-arrow"
-                ><iconify-icon
-                  icon="material-symbols:keyboard-arrow-down-rounded"
-                ></iconify-icon></span
-            ></a>
-            <ul class="dropdown">
-              <li class="sub-menu"><a href="#">Programs</a></li>
-              <li class="sub-menu"><a href="#">Campaigns</a></li>
-              <li class="sub-menu"><a href="#">Feeding Old age</a></li>
-              <li class="sub-menu"><a href="#">Giving Clothes</a></li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="#" class="item-link"
-              >Ways you can help<span class="sub-arrow"
-                ><iconify-icon
-                  icon="material-symbols:keyboard-arrow-down-rounded"
-                ></iconify-icon></span
-            ></a>
-            <ul class="dropdown">
-              <li class="sub-menu"><a href="#">Volunteers</a></li>
-              <li class="sub-menu"><a href="#">Donate</a></li>
-              <li class="sub-menu"><a href="#">Sponsorships</a></li>
-            </ul>
-          </li>
-        </ul>
+      <nav class="nav">
+          <ul class="unorder">
+              <li class="menu-item"><a href="#" class="item-link">Home</a></li>
+              <!-- <li class="menu-item"><a href="#" class="item-link">Programs</a></li> -->
+              <li class="menu-item"><a href="#" class="item-link link-hover">About<span
+                          class="sub-arrow"><iconify-icon
+                              icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon></span></a>
+                  <ul class="dropdown">
+                      <li class="sub-menu"><a href="#">Our mission</a></li>
+                      <li class="sub-menu"><a href="#">Our Vision</a></li>
+                      <li class="sub-menu"><a href="#">finances</a></li>
+                      <li class="sub-menu"><a href="#">FAQ's</a></li>
+                  </ul>
+              </li>
+              <li class="menu-item"><a href="#" class="item-link">How we help<span class="sub-arrow"><iconify-icon
+                              icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon></span></a>
+                  <ul class="dropdown">
+                      <li class="sub-menu"><a href="#">Programs</a></li>
+                      <li class="sub-menu"><a href="#">Campaigns</a></li>
+                      <li class="sub-menu"><a href="#">Feeding Old age</a></li>
+                      <li class="sub-menu"><a href="#">Giving Clothes</a></li>
+                  </ul>
+              </li>
+              <li class="menu-item"><a href="#" class="item-link">Ways you can help<span
+                          class="sub-arrow"><iconify-icon
+                              icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon></span></a>
+                  <ul class="dropdown">
+                      <li class="sub-menu"><a href="#">Volunteers</a></li>
+                      <li class="sub-menu"><a href="#">Donate</a></li>
+                      <li class="sub-menu"><a href="#">Sponsorships</a></li>
+                  </ul>
+              </li>
+          </ul>
       </nav>
       <div class="element">
-        <div class="element-btn">
-          <a href="#">Donate</a>
-        </div>
+          <div class="element-btn">
+              <a href="#">Donate</a>
+          </div>
       </div>
-    </header>
+      <div class="mobile-hamburger">
+          <iconify-icon icon="iconamoon:menu-burger-horizontal-thin" onclick="openNav()"
+              height="33px"></iconify-icon>
+      </div>
+      <div class="overlay" id="mobile-nav" style="width:100%;">
+          <a href="javascript:void(0)" class="closebtn" onclick="hidePopup()" style="font-size: 55px;">×</a>
+          <div class="overlay-content">
+              <a href="#" class="logo">
+                  <img src="../Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
+                  <div class="name">
+                      <div class="title">Vayovruddhala</div>
+                      <div class="charity">Charitable Trust</div>
+                  </div>
+              </a>
+              <div class="css-item">
+                  <ul>
+                      <li><a href="/index.html" class="css-a">Home</a></li>
+                      <li><a href="#" class="css-a">About</a></li>
+                      <li><a href="#" class="css-a css-h">Programs</a></li>
+                      <li><a href="#" class="css-a">Campaigns</a></li>
+                     
+                      <li><a href="#" class="b-button css-mobile-side">Volunteers</a></li>
+                      <li><a href="#"  class="s-button css-mobile-side">Sponsorships</a></li>
+                      <li><a href="#"  class="s-button css-mobile-side">FAQs</a></li>
+                      
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </header>
     <div class="css-123-main">
       <div class="css-123-main_head">
         <h1 class="css-124-title">కార్యక్రమం పేరు</h1>

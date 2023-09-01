@@ -1,10 +1,12 @@
-.mobile-hamburger{
+.mobile-hamburger {
     display: none;
-  }
-  #mobile-nav{
+}
+
+#mobile-nav {
     display: none;
-  }
-  .overlay {
+}
+
+.overlay {
     display: none;
     height: 100vh;
     height: calc(100vh - 10px);
@@ -17,29 +19,34 @@
     overflow-x: hidden;
     transition: 1s;
 }
-.closebtn{
+
+.closebtn {
     padding: 0px 1.4rem;
     float: right;
     color: #000;
     text-decoration: none;
 }
 
-.overlay-content{
+.overlay-content {
     padding: 1rem 2rem;
 }
-.css-menu{
+
+.css-menu {
     text-align: center;
     font-size: 2rem;
     margin-left: 30px;
 }
-.css-item ul{
+
+.css-item ul {
     list-style: none;
 }
-.css-item ul li{
+
+.css-item ul li {
     padding: .5rem 0rem;
     font-size: 1.2rem;
 }
-.css-item ul li a{
+
+.css-item ul li a {
     text-align: left;
     text-decoration: none;
     color: #000;
@@ -48,11 +55,13 @@
     border-radius: 10px;
     transition: 0.4s all ease-in;
 }
-.css-item ul li a:hover{
+
+.css-item ul li a:hover {
     background: #7a45b5;
     color: #fff;
 }
-.css-mobile{
+
+.css-mobile {
     width: 100%;
     display: block;
     padding: 0.7rem 1.9rem;
@@ -60,86 +69,124 @@
     text-align: center;
     text-decoration: none;
     background-color: #000;
-    border: 1px solid #000;   
-    margin: 1rem 0 ;
+    border: 1px solid #000;
+    margin: 1rem 0;
     transition: .2s ease-out;
 }
+
 @media screen and (max-width: 450px) {
-    .nav, .element{
+    .nav, .element {
         display: none;
     }
-    header{
+
+    header {
         padding: 5px 20px;
     }
-    .mobile-hamburger{
+
+    .mobile-hamburger {
         display: block;
-      }
-      .css123 {
+    }
+
+    .css123 {
         margin: 0px 20px;
         display: grid;
         grid-template-columns: 1fr;
         gap: 2rem;
         align-items: center;
     }
+
     .head-h {
         font-size: 3rem;
         line-height: 50px;
     }
+
     .card {
         padding: 25px 30px;
     }
-    .main{
+
+    .main {
         flex-direction: column;
         margin: 10px 20px;
         gap: 4rem;
         align-items: center;
     }
-    .left{
+
+    .left {
         position: relative;
         top: 0;
     }
-    .right{
+
+    .right {
         width: calc(100% - 20px);
     }
+
     .image-l {
         grid-template-columns: 1fr;
     }
+
     .css243 {
         width: 100%;
     }
-    .box, .box-1{
+
+    .box, .box-1 {
         flex-direction: column;
         gap: 1rem;
         margin: 40px 0px 30px 0px;
     }
+
     .image-wapper {
         margin: 0;
     }
-    .css-flex-space{
+
+    .css-flex-space {
         font-size: .9rem;
     }
+
     .css-rt {
         padding: 0px;
     }
+
     .gallery-main {
-        flex-direction: column;
+        flex-direction: column !important;
     }
+
     .img-box {
-        width: 100%;
+        width: 100% !important;
     }
+
     .css-footer-main {
-        flex-direction: column;
-        align-items: center;
-        padding: 0 2rem;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 0 2rem !important;
     }
+
     .css-links {
-        width: 100%;
+        width: 100% !important;
     }
+
     .css-account {
-        width: 100%;
+        width: 100% !important;
     }
+
     .css-acc {
         padding: 0.5rem;
         font-size: 0.8rem;
+    }
+
+
+    .css-123-main {
+        margin: 0rem 1rem !important;
+    }
+    .css_223_pic_text {
+        flex-direction: column !important;
+    }
+    .css_223_pic_text_img {
+        width: 100% !important;
+    }
+    .cs_123_loaction {
+        justify-content: center !important;
+    }
+    .css_names {
+        font-size: .7rem !important;
     }
 }
