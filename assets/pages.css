@@ -171,9 +171,7 @@ header nav ul>li>.item-link:hover>.dropdown {
     background-color: #f1f1f1;
 }
 
-.css_125_matter {
-    margin: 2rem 0rem;
-}
+
 
 .css_125_matter_img {
     object-fit: cover;
@@ -188,14 +186,21 @@ header nav ul>li>.item-link:hover>.dropdown {
 }
 
 .css_223_pic_text {
-    margin: 1rem 0rem;
-    display: flex;
-    gap: 2rem;
+    margin: 1.5rem 0rem ;
 }
 
 .css_223_pic_text_img {
     object-fit: cover;
-    width: 500px;
+    max-width: 450px;
+    float: left;
+    margin: 20px 15px 15px 0px;
+    border-radius: 5px;
+}
+.css_223_pic_text_img_1 {
+    object-fit: cover;
+    max-width: 450px;
+    float: right;
+    margin: 0px 15px 15px 10px;
     border-radius: 5px;
 }
 
@@ -206,8 +211,103 @@ header nav ul>li>.item-link:hover>.dropdown {
 }
 
 /* ================================garally===================== */
-
-
+.main{
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    clear: both;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.right_payment_box{
+    position: sticky;
+    top: 150px;
+    min-width: 35%;
+    height: 100%;   
+}
+.right_box{
+    margin-left: 2rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+}
+.card-inside{
+    padding-top: 0px !important;
+    padding: 1.4rem;
+    /* border: 2px solid silver; */
+    border-radius: 12px;
+}
+.qoute{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.md-4{
+    display: block;
+    justify-content: center;
+}
+.group{
+    display: inline-block;
+    width: 28.33333%;
+    padding: 5px 0 0 5px;
+}
+.group-a{
+    display: block;
+    color: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    /* line-height: 36px; */
+    height: auto;
+    padding: 12px 12px 6px 12px;
+    width: 100%;
+    border: 2px solid #dedfe3;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    position: relative;
+    background: 0 0;
+    overflow: hidden;
+}
+.group-a:hover{
+    background-color: #dedfe3;
+    color: #4c85db;
+}
+.pay-btn{
+    width: 100%;
+    border-radius: 6px;
+    background-color: #114799;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.pay-link{
+    color: white;
+    text-decoration: none;
+}
+.qoute_2{
+    margin: 1rem 0;
+    color: #3226d8;
+    font-size: 1.2rem;
+}
+.row_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.icon_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.icon_text p{
+    margin-left: 10px;
+}
 .img-box {
     width: 31%;
     height: fit-content;

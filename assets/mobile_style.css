@@ -57,7 +57,7 @@
 }
 
 .css-item ul li a:hover {
-    background: #7a45b5;
+    background: #114799;
     color: #fff;
 }
 
@@ -189,4 +189,24 @@
     .css_names {
         font-size: .7rem !important;
     }
+    .img_bg{
+        height: 350px;
+        object-position: center;
+        object-fit: fill;
+    }
+    .flex_cards{
+        padding: 2rem 1.5rem;
+    }
+    .donation-element {
+        padding: 50px 0px;
+    }
+    .support_element {
+        padding: 1.3rem;
+    }
+    .main_box{
+        margin: 15px 0;
+     }
+     .css_234_rty{
+        justify-content: flex-start;
+     }
 }
