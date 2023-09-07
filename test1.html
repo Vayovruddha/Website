@@ -5,6 +5,7 @@
     <title>Social Sharing</title>
     <!-- Include jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
     <!-- Your custom styles and scripts -->
     <style>
         /* Your CSS styles here */
@@ -16,7 +17,40 @@
     </div>
 
     <!-- Your social sharing button -->
-    <button class="fab fa-whatsapp" onclick="socialSharingButton(event, this, 'Mobile')">Share on Mobile</button>
+    <div class="share_elements">
+        <button onclick="socialSharingButton(event, this, 'WhatsApp')" class="whatsapp share_icons">
+          <iconify-icon icon="ic:round-whatsapp"></iconify-icon>
+        </button>
+        <button onclick="socialSharingButton(event, this, 'Facebook')" class="facebook share_icons">
+          <iconify-icon icon="ic:round-facebook"></iconify-icon>
+        </button>
+        <button onclick="socialSharingButton(event, this, 'Mobile')" class="share share_icons">
+          <iconify-icon icon="mdi:share"></iconify-icon>
+        </button>
+      </div>
+      <a id="whatsapp-share-link" href="#" target="_blank">
+        Share on WhatsApp
+     </a>
+     
+     <script>
+        // Function to create a dynamic WhatsApp sharing link
+        function createWhatsAppShareLink() {
+           var pageTitle = document.title;
+           var pageURL = window.location.href;
+           var message = "Check out this page: " + pageTitle + " " + pageURL;
+           message = encodeURIComponent(message); // Encode the message
+     
+           // Create the WhatsApp sharing link
+           var whatsappLink = "whatsapp://send?text=" + message;
+     
+           // Set the href attribute of the anchor tag
+           document.getElementById("whatsapp-share-link").setAttribute("href", whatsappLink);
+        }
+     
+        // Call the function to generate the WhatsApp sharing link
+        createWhatsAppShareLink();
+     </script>
+     
 
     <script>
         function socialSharingButton(e, ele, ss_type) {
@@ -37,13 +71,12 @@
 
             if (ss_type === "WhatsApp") {
                 url = url + 'utm_medium=social&utm_source=WhatsApp'
-                // if (data_title && data_title.whatsapp) {
-                //     url = url + '\n' + data_title.whatsapp;
-                // }
-                // query = jQuery.param({
-                //     text: url
-                // });
-                // console.log("Whatsapp-======:", query);
+                if (data_title && data_title.whatsapp) {
+                    url = url + '\n' + data_title.whatsapp;
+                }
+                query = jQuery.param({
+                    text: url
+                });
                 shareUrl = "https://"+(isMobileTablet?'api':'web')+".whatsapp.com/send?" + query;
             } else if (ss_type === "Facebook") {
                 url = url + 'utm_medium=social&utm_source=Facebook'

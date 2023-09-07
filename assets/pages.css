@@ -230,7 +230,7 @@ header nav ul>li>.item-link:hover>.dropdown {
     position: absolute;
     top: 170px;
     left: 0;
-    z-index: 999;
+    z-index: 9;
     position: fixed;
     display: flex;
     flex-direction: column;

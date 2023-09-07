@@ -59,7 +59,7 @@
     height: calc(100vh - 10px);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: fixed;
-    z-index: 11;
+    z-index: 99;
     top: 0;
     left: 0;
     background-color: #fff;
@@ -163,8 +163,11 @@
         top: 0;
     }
     .share_icons{
-        font-size: 1.5rem !important;
+        font-size: 1.9rem !important;
         padding: .4rem !important;
+    }
+    .mySwiper, .css_223_pic_text_img{
+        min-width: 350px;
     }
     .right {
         width: calc(100% - 20px);
