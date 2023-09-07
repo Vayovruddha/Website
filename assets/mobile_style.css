@@ -6,6 +6,53 @@
     display: none;
 }
 
+.p_qr{
+    margin-bottom: 20px;
+}
+.popup {
+    background-color: #05050591;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    transition: 4s ease-in;
+}
+.block-box {
+    width: 390px;
+    height: 500px;
+    text-align: center;
+    background-color: white;
+    border-radius: 12px;
+    padding: 40px;
+}
+.block-box h2{
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+.block-box h3{
+    margin-bottom: 15px;
+}
+.qr_img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.button_model{
+    padding: 10px 25px 5px;
+    border: none;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.button_model:hover{
+    cursor: pointer;
+    background-color: #f1f1f1;
+}
 .overlay {
     display: none;
     height: 100vh;
@@ -115,7 +162,10 @@
         position: relative;
         top: 0;
     }
-
+    .share_icons{
+        font-size: 1.5rem !important;
+        padding: .4rem !important;
+    }
     .right {
         width: calc(100% - 20px);
     }
@@ -167,13 +217,22 @@
     .css-account {
         width: 100% !important;
     }
-
-    .css-acc {
-        padding: 0.5rem;
-        font-size: 0.8rem;
+    .css_125_matter_p{
+        margin: 20px 15px 0;
     }
-
-
+    .css_223_pic_text_img_1{
+        max-width: 400px;
+    }
+    .css-acc {
+        padding: .7rem .7rem 0rem !important;
+        font-size: 0.8rem !important;
+    }
+    .right_payment_box{
+        display: none;
+    }
+    .promo{
+        font-size: 2.5rem !important;
+    }
     .css-123-main {
         margin: 0rem 1rem !important;
     }
@@ -213,18 +272,18 @@
         width: calc(100% - 30px);
      }
      .donation_details {
-        padding: 3rem 2rem;
+        padding: 3rem 2rem !important;
      }
      .donation_details_flex {
-        gap: 2rem;
-        flex-direction: column;
+        gap: 2rem !important;
+        flex-direction: column !important;
      }
      .donation-promo{
-        width: 100%;
+        width: 100% !important;
      }
      .css-account_qr {
-        margin-top: 1rem;
-        width: 100%;
+        margin-top: 1rem !important;
+        width: 100% !important;
      }
      .card_1::after{
         clip-path: circle(30% at 112% 111%);

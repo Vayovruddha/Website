@@ -7,52 +7,6 @@
     font-family: 'Anek Telugu', sans-serif !important;
     scroll-behavior: smooth;
 }
-.p_qr{
-    margin-bottom: 20px;
-}
-.popup {
-    background-color: #05050591;
-    width: 100%;
-    height: 100%;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 999;
-    transition: 4s ease-in;
-}
-.block-box {
-    width: 390px;
-    height: 500px;
-    text-align: center;
-    background-color: white;
-    border-radius: 12px;
-    padding: 40px;
-}
-.block-box h2{
-    font-size: 2rem;
-    margin-bottom: 15px;
-}
-.block-box h3{
-    margin-bottom: 15px;
-}
-.qr_img{
-    width: 200px;
-    height: 200px;
-    margin-bottom: 20px;
-}
-.button_model{
-    padding: 10px 25px 5px;
-    border: none;
-    font-size: 1.2rem;
-    background-color: #fff;
-    border-radius: 4px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-.button_model:hover{
-    cursor: pointer;
-    background-color: #f1f1f1;
-}
 header {
     width: 100%;
     height: 84px;
@@ -353,16 +307,16 @@ header nav ul>li>.item-link:hover> .dropdown{
     margin-bottom: 50px;
     position: relative;
 }
-/* .card_1:hover{
+.card_1:hover{
     box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
-} */
+}
 .event_css{
     padding: 8px 13px 2px;
     background-color: transparent;
     border: 1px solid #c0c8d8;
     border-radius: 100px;
-    letter-spacing: 1px;
-    z-index: 9;
+    letter-spacing: .5px;
+    font-size: 1.2rem;  
     display: inline-block;
     margin-bottom: 15px;
 }
@@ -372,7 +326,7 @@ header nav ul>li>.item-link:hover> .dropdown{
     border: 1px solid #c0c8d8;
     border-radius: 70px;
     color: #0884FF;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     display: inline-block;
 }
 .css_12thy{
@@ -833,7 +787,7 @@ header nav ul>li>.item-link:hover> .dropdown{
     width: 100%;
     height: 100%;
     background-color: #e74c3c;
-    clip-path: circle(10% at 100% 111%);
+    clip-path: circle(15% at 100% 111%);
     transition: .5s;
 }
 .card_1:nth-child(2)::after{
