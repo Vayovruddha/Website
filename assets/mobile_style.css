@@ -209,4 +209,24 @@
      .css_234_rty{
         justify-content: flex-start;
      }
+     .block-box{
+        width: calc(100% - 30px);
+     }
+     .donation_details {
+        padding: 3rem 2rem;
+     }
+     .donation_details_flex {
+        gap: 2rem;
+        flex-direction: column;
+     }
+     .donation-promo{
+        width: 100%;
+     }
+     .css-account_qr {
+        margin-top: 1rem;
+        width: 100%;
+     }
+     .card_1::after{
+        clip-path: circle(30% at 112% 111%);
+     }
 }

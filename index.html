@@ -17,6 +17,18 @@
 
 
     <body>
+        <div class="popup">
+            <div class="block-box">
+                <h2>Scan QR</h2>
+                <p class="p_qr">If you wish to pay by UPI.</p>
+                <img src="/Images/qr.png" alt="scan_qr" class="qr_img">
+                <h3>Or</h3>
+                <form>
+                    <input class="button_model" type="button" value="Download QR"
+                        onClick="window.location.href='/Images/qr.png'">
+                </form>
+            </div>
+        </div>
         <header>
             <a href="#" class="logo">
                 <img src="Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
@@ -40,7 +52,7 @@
             </nav>
             <div class="element">
                 <div class="element-btn">
-                    <a href="#">Donate</a>
+                    <a href="#" class="qr">Donate</a>
                 </div>
             </div>
             <div class="mobile-hamburger">
@@ -62,17 +74,18 @@
                             <li><a href="/index.html" class="css-a">Home</a></li>
                             <li><a href="#" class="css-a">About</a></li>
                             <li><a href="#" class="css-a css-h">Programs</a></li>
-                            <li><a href="#" class="css-a">Campaigns</a></li>
+                            <!-- <li><a href="#" class="css-a">Campaigns</a></li> -->
 
-                            <li><a href="#" class="b-button css-mobile-side">Volunteers</a></li>
-                            <li><a href="#" class="s-button css-mobile-side">Sponsorships</a></li>
-                            <li><a href="#" class="s-button css-mobile-side">FAQs</a></li>
+                            <li><a href="#" class="b-button css-mobile-side">Support & Initiatives</a></li>
+                            <!-- <li><a href="#" class="s-button css-mobile-side">Sponsorships</a></li>
+                            <li><a href="#" class="s-button css-mobile-side">FAQs</a></li> -->
 
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
+
         <!-- Swiper -->
         <div class="swiper-element">
             <swiper-container class="mySwiper" autoplay="true" autoplay-disableOnInteraction="false"
@@ -154,27 +167,27 @@
                             </div>
                             <div class="qoute">
                                 <div class="md-4">
-                                    <div class="group">
-                                        <a href="#" class="group-a">₹4000</a>
+                                    <div class="group qr">
+                                        <div id="c2" class="group-a">₹4000</div>
                                     </div>
-                                    <div class="group">
-                                        <a href="#" class="group-a">₹2000</a>
+                                    <div class="group qr">
+                                        <div class="group-a">₹2000</div>
                                     </div>
-                                    <div class="group">
-                                        <a href="#" class="group-a">₹1000</a>
+                                    <div class="group qr">
+                                        <div class="group-a">₹1000</div>
                                     </div>
-                                    <div class="group">
-                                        <a href="#" class="group-a">₹600</a>
+                                    <div class="group qr">
+                                        <div id="c5" class="group-a">₹600</div>
                                     </div>
-                                    <div class="group">
-                                        <a href="#" class="group-a">₹500</a>
+                                    <div class="group qr">
+                                        <div id="c6" class="group-a">₹500</div>
                                     </div>
-                                    <div class="group">
-                                        <a href="#" class="group-a">₹450</a>
+                                    <div class="group qr">
+                                        <div id="c7" class="group-a">₹450</div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="pay-btn">
+                            <div class="pay-btn qr">
                                 <a href="#" class="pay-link">Donate and support</a>
                             </div>
                         </div>
@@ -260,7 +273,7 @@
                                     Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of
                                     text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
                                     chunks as necessary, making this the first true generator on the Internet.</p>
-                                <button class="btn">Donate</button>
+                                <button class="btn qr">Donate</button>
                             </div>
 
                         </div>
@@ -348,7 +361,10 @@
                 </div>
                 <div class="card_1">
                     <p class="event_css">Weekly Medical Camp</p>
-                    <p>Every Sunday, we conduct a free medical camp to address the health needs of the elderly. Specialist doctors generously volunteer their time to provide medical check-ups and consultations, ensuring that our elderly community receives the necessary healthcare support.</p>
+                    <p>Every Sunday, we conduct a free medical camp to address the health needs of the elderly.
+                        Specialist doctors generously volunteer their time to provide medical check-ups and
+                        consultations, ensuring that our elderly community receives the necessary healthcare support.
+                    </p>
                     <div class="css_12thyt">
                         <div class="css_234_rty">
                             <p class="event_css_1"><strong>Free</strong> medical check-up </p>
@@ -358,7 +374,9 @@
                 </div>
                 <div class="card_1">
                     <p class="event_css">Cultural Events</p>
-                    <p>On special days and festivals, we organize cultural events and relaxation activities for the trust beneficiaries. These activities include singing competitions and traditional/cultural dressing competitions, creating moments of joy and fun in the lives of our elderly friends.</p>
+                    <p>On special days and festivals, we organize cultural events and relaxation activities for the
+                        trust beneficiaries. These activities include singing competitions and traditional/cultural
+                        dressing competitions, creating moments of joy and fun in the lives of our elderly friends.</p>
                     <div class="css_12thyt">
                         <div class="css_234_rty">
                             <p class="event_css_1">Fun Activities</p>
@@ -370,7 +388,10 @@
                 </div>
                 <div class="card_1">
                     <p class="event_css">Honorary Awards</p>
-                    <p>Each year, on the "International Day of Older Persons" celebrated on October 1st, we honor elderly individuals who have reached the remarkable milestone of 100 years of age. About 20 centenarians from the districts of Krishna, Guntur, and West Godavari are identified and presented with prestigious awards in a dignified ceremony.</p>
+                    <p>Each year, on the "International Day of Older Persons" celebrated on October 1st, we honor
+                        elderly individuals who have reached the remarkable milestone of 100 years of age. About 20
+                        centenarians from the districts of Krishna, Guntur, and West Godavari are identified and
+                        presented with prestigious awards in a dignified ceremony.</p>
                     <div class="css_12thyt">
                         <div class="css_234_rty">
                             <p class="event_css_1">Recognizing Centenarians</p>
@@ -379,7 +400,9 @@
                 </div>
                 <div class="card_1">
                     <p class="event_css">Support in Their Lasts</p>
-                    <p>In the unfortunate event of the passing of our trust beneficiaries, we extend our respect and provide financial assistance of Rs. 2000/- on behalf of the trust to help cover funeral expenses, ensuring they are treated with dignity even in their last journey.</p>
+                    <p>In the unfortunate event of the passing of our trust beneficiaries, we extend our respect and
+                        provide financial assistance of Rs. 2000/- on behalf of the trust to help cover funeral
+                        expenses, ensuring they are treated with dignity even in their last journey.</p>
                     <div class="css_12thyt">
                         <div class="css_234_rty">
                             <p class="event_css_1">Funeral Support</p>
@@ -388,7 +411,10 @@
                 </div>
                 <div class="card_1">
                     <p class="event_css">Future Initiatives</p>
-                    <p>In addition to our services for the elderly, we are planning to initiate other social service activities with the support of donors. Our future plans include establishing a library with traditional and cultural books, collecting reusable books and benches, and distributing conditional used clothing to those in need.</p>
+                    <p>In addition to our services for the elderly, we are planning to initiate other social service
+                        activities with the support of donors. Our future plans include establishing a library with
+                        traditional and cultural books, collecting reusable books and benches, and distributing
+                        conditional used clothing to those in need.</p>
                     <div class="css_12thyt">
                         <div class="css_234_rty">
                             <p class="event_css_1">Expanding Our Reach</p>
@@ -400,7 +426,9 @@
                 </div>
                 <div class="card_1">
                     <p class="event_css">Appeal for Financial Support</p>
-                    <p>We have achieved a lot in the past 15 years with the generous contributions from philanthropists, but we aspire to do more. Your small contribution can inspire us to extend our services to more elderly citizens, providing them with a happier and more dignified life.</p>
+                    <p>We have achieved a lot in the past 15 years with the generous contributions from philanthropists,
+                        but we aspire to do more. Your small contribution can inspire us to extend our services to more
+                        elderly citizens, providing them with a happier and more dignified life.</p>
                     <div class="css_12thyt">
                         <div class="css_234_rty">
                             <p class="event_css_1">Contribution Matters</p>
@@ -477,7 +505,47 @@
                         </div>
                     </div>
                 </div>
+                <a href="#" class="view_all_css">View All</a>
             </div>
+        </section>
+        <section class="donation_details">
+            <h2 class="h2">Support Our Cause</h2>
+            <div class="donation_details_flex">
+                <div class="donation-promo">
+                    <p class="promo">Together, we can bring positive change to those in need.</p>
+                    <p>In Indian tradition, Annadhanam (serving food to the poor) is considered auspicious. We invite
+                        you to extend your kind support to serve food to elderly citizens in need. Your contribution
+                        will not only brighten their lives but also bring blessings and prosperity to you and your
+                        family.</p>
+                    <button class=" donateButton qr">Donate Now</button>
+                </div>
+                <div class="css-account">
+                    <h2>Account Details</h2>
+                    <div class="css-acc">
+                        <div class="css-d">
+                            <h3 class="acc-d">Bank Name <p>:</p></h3>
+                            <h3 class="acc-n">KARUR VYSYA BANK</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">A/c Name <p>:</p></h3>
+                            <h3 class="acc-n">Vavyovruddha Charitable Trust</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">A/c name <p>:</p></h3>
+                            <h3 class="acc-n">4857115000001291</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">IFSC Code <p>:</p></h3>
+                            <h3 class="acc-n">KVBL0004857</h3>
+                        </div>
+                        <div class="css-d">
+                            <h3 class="acc-d">Branch <p>:</p></h3>
+                            <h3 class="acc-n">Vijayawada, Satyanarayanapuram</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </section>
         <footer>
             <div class="css-footer-main">
@@ -491,7 +559,7 @@
                             </div>
                         </a>
                         <div class="css-phone">
-                            <p>chuttugunta Center, Eluru Road,<br>Vijayawada - 5200002</p>
+                            <p>R.No. 39/2007, 30.22.131/3, Chuttugunta Center, Eluru Road,<br>Vijayawada - 5200002</p>
                         </div>
                     </div>
                 </div>
@@ -542,34 +610,17 @@
                         </ul>
                     </div>
                 </div>
-                <div class="css-account">
-                    <h2>Account Details</h2>
-                    <div class="css-acc">
-                        <div class="css-d">
-                            <h3 class="acc-d">Bank Name:</h3>
-                            <h3 class="acc-n">KARUR VYSYA BANK</h3>
-                        </div>
-                        <div class="css-d">
-                            <h3 class="acc-d">A/c Name:</h3>
-                            <h3 class="acc-n">Vavyovruddha Charitable Trust</h3>
-                        </div>
-                        <div class="css-d">
-                            <h3 class="acc-d">A/c name:</h3>
-                            <h3 class="acc-n">4857115000001291</h3>
-                        </div>
-                        <div class="css-d">
-                            <h3 class="acc-d">IFSC Code:</h3>
-                            <h3 class="acc-n">KVBL0004857</h3>
-                        </div>
-                        <div class="css-d">
-                            <h3 class="acc-d">Branch:</h3>
-                            <h3 class="acc-n">Vijayawada, Satyanarayanapuram</h3>
-                        </div>
+                <div class="css-account_qr">
+                    <div class="account_qr">
+                        <p>If you wish to pay by UPI.</p>
+                        <img src="/Images/qr.png" alt="qr" class="qr_img_f">
+                       <p><strong>Name </strong>: VayovrudhaCharityTrust</p>
                     </div>
+                    
                 </div>
             </div>
             <hr>
-            <p style="text-align: center; padding:20px 15px">Copyrights 2023</p>
+            <p style="text-align: center; padding:20px 15px">&copy; Copyrights 2023</p>
         </footer>
 
 
@@ -577,9 +628,18 @@
 
 
 
-
-
         <script>
+            function showPopup() {
+                document.querySelector(".popup").style.display = "flex";
+            }
+
+            const buttons = document.querySelectorAll(".qr");
+            buttons.forEach(button => {
+                button.addEventListener("click", showPopup);
+            });
+            document.querySelector(".popup").addEventListener("click", function () {
+                document.querySelector(".popup").style.display = "none"
+            })
             function openNav() {
                 document.getElementById("mobile-nav").style.width = "80%";
                 document.getElementById("mobile-nav").style.display = "block";
