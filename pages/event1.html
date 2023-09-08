@@ -10,7 +10,6 @@
   <link rel="shortcut icon" href="../Images/logo-c.jpg" />
   <link rel="stylesheet" href="../assets/mobile_style.css" />
   <link rel="stylesheet" href="../assets/pages.css" />
-  <!-- <link rel="stylesheet" href="../assets/style.css" /> -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
 </head>
@@ -18,6 +17,7 @@
 <body>
   <div class="popup">
     <div class="block-box">
+      <iconify-icon icon="mingcute:close-fill" class="closebtn"></iconify-icon>
       <h2>Scan QR</h2>
       <p class="p_qr">If you wish to pay by UPI.</p>
       <img src="../Images/qr.png" alt="scan_qr" class="qr_img">
@@ -61,7 +61,7 @@
     </a>
     <nav class="nav">
       <ul class="unorder">
-        <li class="menu-item"><a href="#" class="item-link">Home</a></li>
+        <li class="menu-item"><a href="/" class="item-link">Home</a></li>
 
         <li class="menu-item"><a href="#" class="item-link link-hover">About</a>
 
@@ -95,12 +95,7 @@
             <li><a href="/" class="css-a">Home</a></li>
             <li><a href="#" class="css-a">About</a></li>
             <li><a href="#" class="css-a css-h">Programs</a></li>
-            <!-- <li><a href="#" class="css-a">Campaigns</a></li> -->
-
             <li><a href="#" class="b-button css-mobile-side">Support & Initiatives</a></li>
-            <!-- <li><a href="#" class="s-button css-mobile-side">Sponsorships</a></li>
-                    <li><a href="#" class="s-button css-mobile-side">FAQs</a></li> -->
-
           </ul>
         </div>
       </div>
@@ -185,7 +180,7 @@
           సాఫ్ట్‌వేర్‌తో కూడా మనుగడ సాగించింది.
         </p>
         <div class="css_223_pic_text">
-          <div>
+          <div class="css_img_flex_123">
             <img
               src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111787/Monday%2015th%202022/event_zwh3xz.jpg"
               alt="image" class="css_223_pic_text_img">
@@ -212,9 +207,9 @@
           </p>
         </div>
         <div class="css_223_pic_text">
-          <div>
+          <div  class="css_img_flex_123">
             <img
-              src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/event1_rdphbd.jpg"
+              src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111821/Monday%2015th%202022/1.5_wejhtt.jpg"
               alt="image" class="css_223_pic_text_img_1">
             <p class="css_title_text">ఇక్కడ వచనాన్ని వ్రాయండి</p>
           </div>
@@ -284,6 +279,16 @@
             <div class="icon_text">
               <iconify-icon icon="mdi:success-circle-outline" height="20px"></iconify-icon>
               <p>High commitment</p>
+            </div>
+          </div>
+          <div class="row_1">
+            <div class="icon_text">
+              <iconify-icon icon="carbon:sustainability" height="20px"></iconify-icon>
+              <p>Sustainability</p>
+            </div>
+            <div class="icon_text">
+              <iconify-icon icon="iconoir:community" height="20px"></iconify-icon>
+              <p>Community Building</p>
             </div>
           </div>
         </div>
@@ -523,7 +528,6 @@
     function showPopup() {
       document.querySelector(".popup").style.display = "flex";
     }
-
     const buttons = document.querySelectorAll(".qr");
     buttons.forEach(button => {
       button.addEventListener("click", showPopup);
@@ -539,137 +543,6 @@
       document.getElementById("mobile-nav").style.width = "0%";
     }
   </script>
-
-  <!-- <script>
-    function socialSharingButton(e, ele, ss_type) {
-      e.preventDefault();
-      var url;
-      if (location.search) {
-        let searchValue = location.search.split("&")[0];
-        url = "https://" + location.hostname + location.pathname + searchValue + '&'
-      } else {
-        url = "https://" + location.hostname + location.pathname + '?'
-      }
-      var title = document.title;
-      var desc = jQuery("meta[name=description]").attr("content");
-      var shareUrl = location.href;
-      var isMobileTablet = navigator.isMobileTablet;
-      var query = "";
-      var data_title = JSON.parse('{"whatsapp":"Hey, you can now book a FREE 1-hour session with a senior academic counselor to know more about the various courses offered by BYJU\'S. Just call @ 9243500457"}');
-
-      if (ss_type === "WhatsApp") {
-        url = url + 'utm_medium=social&utm_source=WhatsApp'
-        // if (data_title && data_title.whatsapp) {
-        //     url = url + '\n' + data_title.whatsapp;
-        // }
-        // query = jQuery.param({
-        //     text: url
-        // });
-        // text=Your message here
-        console.log("===whats==",url)
-        function createWhatsAppShareLink() {
-           var pageTitle = document.title;
-           var pageURL = window.location.href;
-           var message = "Check out this page: " + pageTitle + " " + pageURL;
-           message = encodeURIComponent(message); // Encode the message
-     
-           // Create the WhatsApp sharing link
-           var whatsappLink = "whatsapp://send?text=" + message;
-     
-           // Set the href attribute of the anchor tag
-           document.getElementById("whatsapp-share-link").setAttribute("href", whatsappLink);
-        }
-     
-        // Call the function to generate the WhatsApp sharing link
-        createWhatsAppShareLink();
-        var shareUrl = "whatsapp://send?" + url;
-        console.log("===whats==",shareUrl)
-
-        // shareUrl = "https://whatsapp://send?text=" + (isMobileTablet ? 'api' : 'web') + "whatsapp//send?" + url;
-      } else if (ss_type === "Facebook") {
-        url = url + 'utm_medium=social&utm_source=Facebook'
-        query = jQuery.param({
-          u: url,
-          title: title
-        });
-        shareUrl = "https://www.facebook.com/sharer.php?" + query;
-      } else if (ss_type === "Mobile") {
-        url = url + 'utm_medium=social&utm_source=MobileShare';
-
-        if (navigator.share === undefined) {
-          query = jQuery.param({
-            u: url,
-            title: title
-          });
-          shareUrl = "https://www.facebook.com/sharer.php?" + query;
-          ss_type = "Facebook"; // Set to Facebook sharing when navigator.share is not available
-        } else {
-          navigator
-            .share({
-              title: title,
-              url: url,
-              text: title
-            })
-            .then(function () { })
-            .catch(function (error) { });
-
-          return false;
-        }
-      }
-
-      // Rest of your code here
-
-      var top = (screen.availHeight - 500) / 2;
-      var left = (screen.availWidth - 500) / 2;
-      var popup = window.open(
-        shareUrl,
-        "social sharing",
-        "width=550,height=420,left=" +
-        left +
-        ",top=" +
-        top +
-        ",location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1"
-      );
-      return false;
-    }
-
-    jQuery(document).ready(function () {
-      if (navigator.isMobileTablet) {
-        // social sharing btns
-        var socialBtns = jQuery("#social-sharing-btns");
-        var h1Ele = jQuery(".h1-1r-title");
-        if (socialBtns && socialBtns.length && h1Ele && h1Ele.length) {
-          socialBtns.css(
-            "top",
-            h1Ele.offset().top + h1Ele.outerHeight() + 10 + "px"
-          );
-        }
-      }
-
-      //navigator share for mobile
-      if (navigator.isMobile) {
-        jQuery("#social-sharing-btns .button-facebook").addClass("hidden").addClass('d-none');
-      }
-    });
-
-    jQuery(document).ready(function () {
-      if (jQuery('.button-whatsapp').is(":hidden") && jQuery('.button-facebook').is(":hidden") && jQuery('.button-mobile').is(":hidden") && jQuery('.btn-slate-blue').is(":hidden")) {
-        jQuery(".social-close-btn").css({ display: "none", visibility: "hidden" });
-      }
-    });
-
-    //code to close the social share menu
-    jQuery(document).ready(function () {
-      jQuery('#close').on('click', function (e) {
-        e.preventDefault();
-        jQuery('.social-sharing-content').remove();
-      });
-    });
-  </script> -->
-
-
-
-
   <script>
     function socialSharingButton(e, ele, ss_type) {
       e.preventDefault();
@@ -786,11 +659,6 @@
       });
     });
   </script>
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>

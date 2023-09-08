@@ -1,124 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vayovruddhala Charitable Trust</title>
-    <link rel="shortcut icon" href="../Images/logo-c.jpg" />
-    <link rel="stylesheet" href="../assets/pages.css" />
-    <link rel="stylesheet" href="../assets/mobile_style.css" />
-    <!-- <link rel="stylesheet" href="../assets/style.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
-    
 
-    <script>
-      function openNav() {
-          document.getElementById("mobile-nav").style.width = "80%";
-          document.getElementById("mobile-nav").style.display = "block";
-      }
-      function hidePopup() {
-          document.getElementById("mobile-nav").style.width = "0%";
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vayovruddhala Charitable Trust</title>
+  <link rel="shortcut icon" href="../Images/logo-c.jpg" />
+  <link rel="stylesheet" href="../assets/pages.css" />
+  <link rel="stylesheet" href="../assets/mobile_style.css" />
+  <!-- <link rel="stylesheet" href="../assets/style.css" /> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+
+
+  <script>
+    function openNav() {
+      document.getElementById("mobile-nav").style.width = "80%";
+      document.getElementById("mobile-nav").style.display = "block";
+    }
+    function hidePopup() {
+      document.getElementById("mobile-nav").style.width = "0%";
+    }
   </script>
-  </head>
+</head>
 
-  <body>
-    <header>
-      <a href="#" class="logo">
+<body>
+  <div class="popup">
+    <div class="block-box">
+      <iconify-icon icon="mingcute:close-fill" class="closebtn"></iconify-icon>
+      <h2>Scan QR</h2>
+      <p class="p_qr">If you wish to pay by UPI.</p>
+      <img src="../Images/qr.png" alt="scan_qr" class="qr_img">
+      <h3>Or</h3>
+      <form>
+        <input class="button_model" type="button" value="Download QR" onClick="window.location.href='/Images/qr.png'">
+      </form>
+    </div>
+  </div>
+  <div class="share_elements">
+    <a href="#" id="whatsapp-share-link" onclick="socialSharingButton(event, this, 'WhatsApp')"
+      class="whatsapp share_icons" target="_blank">
+      <iconify-icon icon="ic:round-whatsapp"></iconify-icon>
+    </a>
+    <button onclick="socialSharingButton(event, this, 'Facebook')" class="facebook share_icons">
+      <iconify-icon icon="ic:round-facebook"></iconify-icon>
+    </button>
+    <button onclick="socialSharingButton(event, this, 'Mobile')" class="share share_icons">
+      <iconify-icon icon="mdi:share"></iconify-icon>
+    </button>
+  </div>
+  <div class="share_elements_mobile">
+    <a href="#" id="whatsapp-share-link" onclick="socialSharingButton(event, this, 'WhatsApp')"
+      class="whatsapp share_icons" target="_blank">
+      <iconify-icon icon="ic:round-whatsapp"></iconify-icon>
+    </a>
+    <button onclick="socialSharingButton(event, this, 'Facebook')" class="facebook share_icons">
+      <iconify-icon icon="ic:round-facebook"></iconify-icon>
+    </button>
+    <button onclick="socialSharingButton(event, this, 'Mobile')" class="share share_icons">
+      <iconify-icon icon="mdi:share"></iconify-icon>
+    </button>
+  </div>
+  <header>
+    <a href="#" class="logo">
+      <img src="../Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
+      <div class="name">
+        <div class="title">Vayo Vruddha</div>
+        <div class="charity">Charitable Trust</div>
+      </div>
+    </a>
+    <nav class="nav">
+      <ul class="unorder">
+        <li class="menu-item"><a href="/" class="item-link">Home</a></li>
+
+        <li class="menu-item"><a href="#" class="item-link link-hover">About</a>
+
+        </li>
+        <li class="menu-item"><a href="#" class="item-link">Programs</a>
+        </li>
+        <li class="menu-item"><a href="/" class="item-link">Support & Initiatives
+        </li>
+      </ul>
+    </nav>
+    <div class="element">
+      <div class="element-btn">
+        <a href="#" class="qr">Donate</a>
+      </div>
+    </div>
+    <div class="mobile-hamburger">
+      <iconify-icon icon="iconamoon:menu-burger-horizontal-thin" onclick="openNav()" height="33px"></iconify-icon>
+    </div>
+    <div class="overlay" id="mobile-nav" style="width:100%;">
+      <a href="javascript:void(0)" class="closebtn" onclick="hidePopup()" style="font-size: 55px;">×</a>
+      <div class="overlay-content">
+        <a href="#" class="logo">
           <img src="../Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
           <div class="name">
-              <div class="title">Vayovruddhala</div>
-              <div class="charity">Charitable Trust</div>
+            <div class="title">Vayovruddhala</div>
+            <div class="charity">Charitable Trust</div>
           </div>
-      </a>
-      <nav class="nav">
-          <ul class="unorder">
-              <li class="menu-item"><a href="#" class="item-link">Home</a></li>
-              <!-- <li class="menu-item"><a href="#" class="item-link">Programs</a></li> -->
-              <li class="menu-item"><a href="#" class="item-link link-hover">About<span
-                          class="sub-arrow"><iconify-icon
-                              icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon></span></a>
-                  <ul class="dropdown">
-                      <li class="sub-menu"><a href="#">Our mission</a></li>
-                      <li class="sub-menu"><a href="#">Our Vision</a></li>
-                      <li class="sub-menu"><a href="#">finances</a></li>
-                      <li class="sub-menu"><a href="#">FAQ's</a></li>
-                  </ul>
-              </li>
-              <li class="menu-item"><a href="#" class="item-link">How we help<span class="sub-arrow"><iconify-icon
-                              icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon></span></a>
-                  <ul class="dropdown">
-                      <li class="sub-menu"><a href="#">Programs</a></li>
-                      <li class="sub-menu"><a href="#">Campaigns</a></li>
-                      <li class="sub-menu"><a href="#">Feeding Old age</a></li>
-                      <li class="sub-menu"><a href="#">Giving Clothes</a></li>
-                  </ul>
-              </li>
-              <li class="menu-item"><a href="#" class="item-link">Ways you can help<span
-                          class="sub-arrow"><iconify-icon
-                              icon="material-symbols:keyboard-arrow-down-rounded"></iconify-icon></span></a>
-                  <ul class="dropdown">
-                      <li class="sub-menu"><a href="#">Volunteers</a></li>
-                      <li class="sub-menu"><a href="#">Donate</a></li>
-                      <li class="sub-menu"><a href="#">Sponsorships</a></li>
-                  </ul>
-              </li>
+        </a>
+        <div class="css-item">
+          <ul>
+            <li><a href="/" class="css-a">Home</a></li>
+            <li><a href="#" class="css-a">About</a></li>
+            <li><a href="#" class="css-a css-h">Programs</a></li>
+            <li><a href="#" class="b-button css-mobile-side">Support & Initiatives</a></li>
           </ul>
-      </nav>
-      <div class="element">
-          <div class="element-btn">
-              <a href="#">Donate</a>
-          </div>
-      </div>
-      <div class="mobile-hamburger">
-          <iconify-icon icon="iconamoon:menu-burger-horizontal-thin" onclick="openNav()"
-              height="33px"></iconify-icon>
-      </div>
-      <div class="overlay" id="mobile-nav" style="width:100%;">
-          <a href="javascript:void(0)" class="closebtn" onclick="hidePopup()" style="font-size: 55px;">×</a>
-          <div class="overlay-content">
-              <a href="#" class="logo">
-                  <img src="../Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
-                  <div class="name">
-                      <div class="title">Vayovruddhala</div>
-                      <div class="charity">Charitable Trust</div>
-                  </div>
-              </a>
-              <div class="css-item">
-                  <ul>
-                      <li><a href="/index.html" class="css-a">Home</a></li>
-                      <li><a href="#" class="css-a">About</a></li>
-                      <li><a href="#" class="css-a css-h">Programs</a></li>
-                      <li><a href="#" class="css-a">Campaigns</a></li>
-                     
-                      <li><a href="#" class="b-button css-mobile-side">Volunteers</a></li>
-                      <li><a href="#"  class="s-button css-mobile-side">Sponsorships</a></li>
-                      <li><a href="#"  class="s-button css-mobile-side">FAQs</a></li>
-                      
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </header>
-    <div class="css-123-main">
-      <div class="css-123-main_head">
-        <h1 class="css-124-title">కార్యక్రమం పేరు</h1>
-        <div class="cs_123_loaction">
-          <div class="css-122-date">కార్యక్రమం స్థలం</div>
-          <div class="css-122-date">Sunday 20th 2022</div>
         </div>
       </div>
+    </div>
+  </header>
+  <div class="css-123-main">
+    <div class="css-123-main_head">
+      <h1 class="css-124-title">కార్యక్రమం పేరు</h1>
+      <div class="cs_123_loaction">
+        <div class="css-122-date">కార్యక్రమం స్థలం</div>
+        <div class="css-122-date">Sunday 20th 2022</div>
+      </div>
+    </div>
+    <div class="main">
       <div class="css_125_matter">
-        <img
-          src="../Images/event_5/head_2.JPG"
-          alt="image"
-          class="css_125_matter_img"
-        />
+        <div class="swiper_images">
+          <swiper-container class="mySwiper_page" autoplay="true" autoplay-disableOnInteraction="false"
+            autoplay-pauseOnMouseEnter="true" autoplay-delay="2000" , loop="true" , pagination="true" grab-cursor="true"
+            slides-per-view="auto">
+
+            <div class="swiper-slide review-slide">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111834/Monday%2015th%202022/event_main_jfes3m.jpg"
+                alt="image" class="css_125_matter_img " width="100%" height="650">
+            </div>
+            <div class="swiper-slide review-slide">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111821/Monday%2015th%202022/1.5_wejhtt.jpg"
+                alt="image" class="css_125_matter_img " width="100%" height="650">
+            </div>
+            <div class="swiper-slide review-slide">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/1.3_u2u6fb.jpg"
+                alt="image" class="css_125_matter_img" width="100%" height="650">
+            </div>
+            <div class="swiper-slide review-slide">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111787/Monday%2015th%202022/event_zwh3xz.jpg"
+                alt="image" class="css_125_matter_img" width="100%" height="650">
+            </div>
+            <div class="swiper-slide review-slid">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112312/Monday%2015th%202022/MBR_0238_sy4qza.jpg"
+                alt="" class="css_125_matter_img" width="100%" height="650">
+            </div>
+            <div class="swiper-slide review-slide">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111863/Monday%2015th%202022/1.2_iksb89.jpg"
+                alt="" class="css_125_matter_img" width="100%" height="650">
+            </div>
+          </swiper-container>
+        </div>
         <p class="css_125_matter_p">
           బడి దగ్గర వదిలేసి వెళ్ళిపోతున్నపుడు | నువ్వు మీ అమ్మా నాన్నల్ని చూసిన
           చూపు, ఓల్డేజ్ హోమ్ లో వదిలేసి వెళ్ళిపోతున్నపుడు మీ అమ్మానాన్నలు నిన్ను
@@ -150,33 +190,13 @@
           సాఫ్ట్‌వేర్‌తో కూడా మనుగడ సాగించింది.
         </p>
         <div class="css_223_pic_text">
-            <div>
-                <img src="../Images/event_5/head_2.1.JPG" alt="image"  class="css_223_pic_text_img">
-                <p class="css_title_text">ఇక్కడ వచనాన్ని వ్రాయండి</p>
-            </div>
-            <p class="css_125_matter_1">
-                బడి దగ్గర వదిలేసి వెళ్ళిపోతున్నపుడు | నువ్వు మీ అమ్మా నాన్నల్ని చూసిన
-                చూపు, ఓల్డేజ్ హోమ్ లో వదిలేసి వెళ్ళిపోతున్నపుడు మీ అమ్మానాన్నలు నిన్ను
-                చూసే చూపు ఒక్కటే.. నీ బాధ గంట మోగగానే పోయేది... వాళ్ళ బాధ గుండె
-                గంట ఆగేదాకా పోదు. లోరెమ్ ఇప్సమ్ అనేది ప్రింటింగ్ మరియు టైప్‌సెట్టింగ్
-                పరిశ్రమ యొక్క డమ్మీ టెక్స్ట్. లోరెమ్ ఇప్సమ్ 1500ల నుండి పరిశ్రమ యొక్క
-                ప్రామాణిక నకిలీ టెక్స్ట్‌గా ఉంది, తెలియని ప్రింటర్ టైప్ యొక్క గాలీని
-                తీసుకొని టైప్ స్పెసిమెన్ వంటి డెస్క్‌టాప్ పబ్లిషింగ్
-                సాఫ్ట్‌వేర్‌తో కూడా మనుగడ సాగించింది.లోరెమ్ ఇప్సమ్ అనేది ప్రింటింగ్
-                మరియు టైప్‌సెట్టింగ్ పరిశ్రమ యొక్క డమ్మీ టెక్స్ట్. లోరెమ్ ఇప్సమ్ 1500ల
-                నుండి పరిశ్రమ యొక్క ప్రామాణిక నకిలీ టెక్స్ట్‌గా ఉంది, తెలియని ప్రింటర్
-                టైప్ యొక్క గాలీని తీసుకొని టైప్ స్పెసిమెన్ పుస్తకాన్ని తయారు చేయడానికి
-                దానిని గిలకొట్టింది. ఇది లోరెమ్ ఇప్సమ్ పాసేజ్‌లను మాత్రమే కాకుండా,
-                ఇటీవల వెర్షన్‌తో సహా ఆల్డస్ నకిలీ టెక్స్ట్‌గా ఉంది, తెలియని ప్రింటర్
-                టైప్ యొక్క గాలీని తీసుకొని టైప్ స్పెసిమెన్ పుస్తకాన్ని తయారు చేయడానికి
-                దానిని గిలకొట్టింది. ఇది లోరెమ్ ఇప్సమ్ పాసేజ్‌లను మాత్రమే కాకుండా,
-                ఇటీవల వెర్షన్‌తో సహా ఆల్డస్ పేజ్‌మేకర్ వంటి డెస్క్‌టాప్ పబ్లిషింగ్
-                సాఫ్ట్‌వేర్‌తో కూడా మనుగడ సాగించింది.
-              </p>
-        </div>
-      </div>
-      <div class="css_223_pic_text">
-        <p class="css_125_matter_1">
+          <div class="css_img_flex_123">
+            <img
+              src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111787/Monday%2015th%202022/event_zwh3xz.jpg"
+              alt="image" class="css_223_pic_text_img">
+            <p class="css_title_text">ఇక్కడ వచనాన్ని వ్రాయండి</p>
+          </div>
+          <p class="css_125_matter_1">
             బడి దగ్గర వదిలేసి వెళ్ళిపోతున్నపుడు | నువ్వు మీ అమ్మా నాన్నల్ని చూసిన
             చూపు, ఓల్డేజ్ హోమ్ లో వదిలేసి వెళ్ళిపోతున్నపుడు మీ అమ్మానాన్నలు నిన్ను
             చూసే చూపు ఒక్కటే.. నీ బాధ గంట మోగగానే పోయేది... వాళ్ళ బాధ గుండె
@@ -195,223 +215,433 @@
             ఇటీవల వెర్షన్‌తో సహా ఆల్డస్ పేజ్‌మేకర్ వంటి డెస్క్‌టాప్ పబ్లిషింగ్
             సాఫ్ట్‌వేర్‌తో కూడా మనుగడ సాగించింది.
           </p>
-          
-        <div>
-            <img src="../Images/event_5/head_2.2.JPG" alt="image"  class="css_223_pic_text_img">
+        </div>
+        <div class="css_223_pic_text">
+          <div  class="css_img_flex_123">
+            <img
+              src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111821/Monday%2015th%202022/1.5_wejhtt.jpg"
+              alt="image" class="css_223_pic_text_img_1">
             <p class="css_title_text">ఇక్కడ వచనాన్ని వ్రాయండి</p>
+          </div>
+          <p class="css_125_matter_1">
+            బడి దగ్గర వదిలేసి వెళ్ళిపోతున్నపుడు | నువ్వు మీ అమ్మా నాన్నల్ని చూసిన
+            చూపు, ఓల్డేజ్ హోమ్ లో వదిలేసి వెళ్ళిపోతున్నపుడు మీ అమ్మానాన్నలు నిన్ను
+            చూసే చూపు ఒక్కటే.. నీ బాధ గంట మోగగానే పోయేది... వాళ్ళ బాధ గుండె
+            గంట ఆగేదాకా పోదు. లోరెమ్ ఇప్సమ్ అనేది ప్రింటింగ్ మరియు టైప్‌సెట్టింగ్
+            పరిశ్రమ యొక్క డమ్మీ టెక్స్ట్. లోరెమ్ ఇప్సమ్ 1500ల నుండి పరిశ్రమ యొక్క
+            ప్రామాణిక నకిలీ టెక్స్ట్‌గా ఉంది, తెలియని ప్రింటర్ టైప్ యొక్క గాలీని
+            తీసుకొని టైప్ స్పెసిమెన్ వంటి డెస్క్‌టాప్ పబ్లిషింగ్
+            సాఫ్ట్‌వేర్‌తో కూడా మనుగడ సాగించింది.లోరెమ్ ఇప్సమ్ అనేది ప్రింటింగ్
+            మరియు టైప్‌సెట్టింగ్ పరిశ్రమ యొక్క డమ్మీ టెక్స్ట్. లోరెమ్ ఇప్సమ్ 1500ల
+            నుండి పరిశ్రమ యొక్క ప్రామాణిక నకిలీ టెక్స్ట్‌గా ఉంది, తెలియని ప్రింటర్
+            టైప్ యొక్క గాలీని తీసుకొని టైప్ స్పెసిమెన్ పుస్తకాన్ని తయారు చేయడానికి
+            దానిని గిలకొట్టింది. ఇది లోరెమ్ ఇప్సమ్ పాసేజ్‌లను మాత్రమే కాకుండా,
+            ఇటీవల వెర్షన్‌తో సహా ఆల్డస్ నకిలీ టెక్స్ట్‌గా ఉంది, తెలియని ప్రింటర్
+            టైప్ యొక్క గాలీని తీసుకొని టైప్ స్పెసిమెన్ పుస్తకాన్ని తయారు చేయడానికి
+            దానిని గిలకొట్టింది. ఇది లోరెమ్ ఇప్సమ్ పాసేజ్‌లను మాత్రమే కాకుండా,
+            ఇటీవల వెర్షన్‌తో సహా ఆల్డస్ పేజ్‌మేకర్ వంటి డెస్క్‌టాప్ పబ్లిషింగ్
+            సాఫ్ట్‌వేర్‌తో కూడా మనుగడ సాగించింది.
+          </p>
         </div>
-    </div>
-    <div class="css-main">
-        <h2 class="cs-h">
-            కార్యకలాపాలు</h2>
-        <div class="gallery-main">
-            <div class="img-box">
-                <img src="../Images/event_5/2.1.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.2.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.3.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.4.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.5.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.6.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.7.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.8.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.9.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.10.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.11.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-            <div class="img-box">
-                <img src="../Images/event_5/2.12.JPG" alt="image" class="img-b css-I">
-                <!-- <div class="css-765">
-                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
-                </div> -->
-            </div>
-        </div>
-    </div>
-    <div class="css_spon">
-        <h2 class="cs-h">
-            స్పాన్సర్లు</h2>
-            <p class="css_spon_f">ఈ కార్యక్రమానికి స్పాన్సర్లు</p>
-            <div class="css_sponers">
-                <div class="css_names">మోక్సిన్ గడియారం</div>
-                <div class="css_names">మోక్సిన్ గడియారం</div>
-                <div class="css_names">మోక్సిన్ గడియారం</div>
-            </div>
-    </div>
-  </div>
-    </div>
-    <footer>
-      <div class="css-footer-main">
-        <div class="css-address">
-          <div class="css-add">
-            <a href="#" class="logo-1">
-              <img
-                src="../Images/logo-c.jpg"
-                alt="logo"
-                width="50px"
-                height="50px"
-                class="img-l"
-              />
-              <div class="name">
-                <div class="title">Viyovruddhala</div>
-                <div class="charity">Charitable Trust</div>
+      </div>
+      <div class="right_payment_box">
+        <div class="right_box">
+          <p class="qoute">Choose Your Donation</p>
+          <div class="card-inside">
+            <div class="qoute">
+              <div class="md-4">
+                <div class="group">
+                  <a href="#" class="group-a qr">₹4000</a>
+                </div>
+                <div class="group">
+                  <a href="#" class="group-a qr">₹2000</a>
+                </div>
+                <div class="group">
+                  <a href="#" class="group-a qr">₹1000</a>
+                </div>
+                <div class="group">
+                  <a href="#" class="group-a qr">₹600</a>
+                </div>
+                <div class="group">
+                  <a href="#" class="group-a qr">₹500</a>
+                </div>
+                <div class="group">
+                  <a href="#" class="group-a qr">₹450</a>
+                </div>
               </div>
-            </a>
-            <div class="css-phone">
-              <p>chuttugunta Center, Eluru Road,<br />Vijayawada - 5200002</p>
+            </div>
+            <div class="qoute">
+              Your Donation Will Support Elderly Care & Social Initiatives
+            </div>
+            <div class="pay-btn qr">
+              <a href="#" class="pay-link">Donate and support</a>
             </div>
           </div>
-        </div>
-        <div class="css-links">
-          <div class="foot-css-125">
-            <h4>About us</h4>
-
-            <ul>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">Our mission</a>
-              </li>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">Our vision</a>
-              </li>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">finances</a>
-              </li>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">FAQs</a>
-              </li>
-            </ul>
+          <hr>
+          <div class="qoute_2">
+            Why you should give
           </div>
-        </div>
-        <div class="css-links">
-          <div class="foot-css-125">
-            <h4>How we help</h4>
-            <ul>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">Programs</a>
-              </li>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">Campaigns</a>
-              </li>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">Feeding old age</a>
-              </li>
-              <li>
-                <iconify-icon
-                  icon="uim:angle-right"
-                  class="icon-f"
-                ></iconify-icon>
-                <a href="#">Sponsorships</a>
-              </li>
-            </ul>
+          <div class="row_1">
+            <div class="icon_text">
+              <iconify-icon icon="game-icons:shaking-hands" height="20px"></iconify-icon>
+              <p>Deep engagement</p>
+            </div>
+            <div class="icon_text">
+              <iconify-icon icon="mdi:success-circle-outline" height="20px"></iconify-icon>
+              <p>High commitment</p>
+            </div>
           </div>
-        </div>
-        <div class="css-account">
-          <h2>Account Details</h2>
-          <div class="css-acc">
-            <div class="css-d">
-              <h3 class="acc-d">Bank Name:</h3>
-              <h3 class="acc-n">KARUR VYSYA BANK</h3>
+          <div class="row_1">
+            <div class="icon_text">
+              <iconify-icon icon="carbon:sustainability" height="20px"></iconify-icon>
+              <p>Sustainability</p>
             </div>
-            <div class="css-d">
-              <h3 class="acc-d">A/c Name:</h3>
-              <h3 class="acc-n">Vavyovruddha Charitable Trust</h3>
-            </div>
-            <div class="css-d">
-              <h3 class="acc-d">A/c name:</h3>
-              <h3 class="acc-n">4857115000001291</h3>
-            </div>
-            <div class="css-d">
-              <h3 class="acc-d">IFSC Code:</h3>
-              <h3 class="acc-n">KVBL0004857</h3>
-            </div>
-            <div class="css-d">
-              <h3 class="acc-d">Branch:</h3>
-              <h3 class="acc-n">Vijayawada, Satyanarayanapuram</h3>
+            <div class="icon_text">
+              <iconify-icon icon="iconoir:community" height="20px"></iconify-icon>
+              <p>Community Building</p>
             </div>
           </div>
         </div>
       </div>
-      <hr />
-      <p style="text-align: center; padding: 20px 15px">Copyrights 2023</p>
-    </footer>
-  </body>
+    </div>
+    <div class="css-main">
+      <h2 class="cs-h">
+        కార్యకలాపాలు</h2>
+      <div class="gallery-main">
+        <div class="img-box">
+          <img src="../Images/event_5/2.1.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.2.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.3.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.4.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.5.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.6.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.7.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.8.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.9.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.10.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.11.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+        <div class="img-box">
+          <img src="../Images/event_5/2.12.JPG" alt="image" class="img-b css-I">
+          <!-- <div class="css-765">
+                    <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
+                </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <section class="donation_details">
+    <h2 class="h2">Support Our Cause</h2>
+    <div class="donation_details_flex">
+      <div class="donation-promo">
+        <p class="promo">Together, we can bring positive change to those in need.</p>
+        <p>In Indian tradition, Annadhanam (serving food to the poor) is considered auspicious. We invite
+          you to extend your kind support to serve food to elderly citizens in need. Your contribution
+          will not only brighten their lives but also bring blessings and prosperity to you and your
+          family.</p>
+        <button class=" donateButton qr">Donate Now</button>
+      </div>
+      <div class="css-account">
+        <h2>Account Details</h2>
+        <div class="css-acc">
+          <div class="css-d">
+            <h3 class="acc-d">Bank Name <p>:</p>
+            </h3>
+            <h3 class="acc-n">KARUR VYSYA BANK</h3>
+          </div>
+          <div class="css-d">
+            <h3 class="acc-d">A/c Name <p>:</p>
+            </h3>
+            <h3 class="acc-n">Vavyovruddha Charitable Trust</h3>
+          </div>
+          <div class="css-d">
+            <h3 class="acc-d">A/c name <p>:</p>
+            </h3>
+            <h3 class="acc-n">4857115000001291</h3>
+          </div>
+          <div class="css-d">
+            <h3 class="acc-d">IFSC Code <p>:</p>
+            </h3>
+            <h3 class="acc-n">KVBL0004857</h3>
+          </div>
+          <div class="css-d">
+            <h3 class="acc-d">Branch <p>:</p>
+            </h3>
+            <h3 class="acc-n">Vijayawada, Satyanarayanapuram</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <div class="css-footer-main">
+      <div class="css-address">
+        <div class="css-add">
+          <a href="#" class="logo-1">
+            <img src="../Images/logo-c.jpg" alt="logo" width="50px" height="50px" class="img-l">
+            <div class="name">
+              <div class="title">Viyovruddhala</div>
+              <div class="charity">Charitable Trust</div>
+            </div>
+          </a>
+          <div class="css-phone">
+            <p>R.No. 39/2007, 30.22.131/3, Chuttugunta Center, Eluru Road,<br>Vijayawada - 5200002</p>
+          </div>
+        </div>
+      </div>
+      <div class="css-links">
+        <div class="foot-css-125">
+          <h4>About us</h4>
+
+          <ul>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">Our mission</a>
+            </li>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">Our vision</a>
+            </li>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">finances</a>
+            </li>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">FAQs</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="css-links">
+        <div class="foot-css-125">
+          <h4>How we help</h4>
+          <ul>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">Programs</a>
+            </li>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">Campaigns</a>
+            </li>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">Feeding old age</a>
+            </li>
+            <li>
+              <iconify-icon icon="uim:angle-right" class="icon-f"></iconify-icon>
+              <a href="#">Sponsorships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="css-account_qr">
+        <div class="account_qr">
+          <p>If you wish to pay by UPI.</p>
+          <img src="/Images/qr.png" alt="qr" class="qr_img_f">
+          <p><strong>Name </strong>: VayovrudhaCharityTrust</p>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <p style="text-align: center; padding:20px 15px">&copy; Copyrights 2023</p>
+  </footer>
+
+  <script>
+    function showPopup() {
+      document.querySelector(".popup").style.display = "flex";
+    }
+    const buttons = document.querySelectorAll(".qr");
+    buttons.forEach(button => {
+      button.addEventListener("click", showPopup);
+    });
+    document.querySelector(".popup").addEventListener("click", function () {
+      document.querySelector(".popup").style.display = "none"
+    })
+    function openNav() {
+      document.getElementById("mobile-nav").style.width = "80%";
+      document.getElementById("mobile-nav").style.display = "block";
+    }
+    function hidePopup() {
+      document.getElementById("mobile-nav").style.width = "0%";
+    }
+  </script>
+  <script>
+    function socialSharingButton(e, ele, ss_type) {
+      e.preventDefault();
+      var url;
+      if (location.search) {
+        let searchValue = location.search.split("&")[0];
+        url = "https://" + location.hostname + location.pathname + searchValue + '&'
+      } else {
+        url = "https://" + location.hostname + location.pathname + '?'
+      }
+      var title = document.title;
+      var desc = jQuery("meta[name=description]").attr("content");
+      var shareUrl = location.href;
+      var isMobileTablet = navigator.isMobileTablet;
+      var query = "";
+      var data_title = JSON.parse('{"whatsapp":"Hey, you can now book a FREE 1-hour session with a senior academic counselor to know more about the various courses offered by BYJU\'S. Just call @ 9243500457"}');
+
+      if (ss_type === "WhatsApp") {
+        // url = url + 'utm_medium=social&utm_source=WhatsApp'
+        // if (data_title && data_title.whatsapp) {
+        //     url = url + '\n' + data_title.whatsapp;
+        // }
+        // query = jQuery.param({
+        //     text: url
+        // });
+        // console.log("Whatsapp-======:", query);
+        // shareUrl = "https://" + (isMobileTablet ? 'api' : 'web') + ".whatsapp.com/send?" + query;
+
+
+        // Create the WhatsApp share URL
+        const whatsappShareURL = "https://api.whatsapp.com/send?text=Hello! 🌟 Vayovruddhala Charitable Trust recently conducted a heartwarming program to support and uplift the elderly in our community. 🤝✨%0A%0A📅 Event Date: [Date]%0A⏰ Event Time: [Time]%0A📍 Location: [Location]%0A%0AWe provided essential resources, companionship, and smiles to our beloved seniors. 💖%0A%0ATo learn more about our initiatives and upcoming programs, visit our website:%0A%0A" + url + "%0A%0AYour support matters. 🙏 Join us in making a difference!%0A%0A%23CharityTrust %23CommunitySupport %23ElderlyCare %23VayovruddhalaCharitableTrust";
+
+        // Open WhatsApp with the pre-filled message
+        window.open(whatsappShareURL, "_blank");
+
+
+      } else if (ss_type === "Facebook") {
+        url = url + 'utm_medium=social&utm_source=Facebook'
+        query = jQuery.param({
+          u: url,
+          title: title
+        });
+        shareUrl = "https://www.facebook.com/sharer.php?" + query;
+      } else if (ss_type === "Mobile") {
+        url = url + 'utm_medium=social&utm_source=MobileShare';
+
+        if (navigator.share === undefined) {
+          query = jQuery.param({
+            u: url,
+            title: title
+          });
+          shareUrl = "https://www.facebook.com/sharer.php?" + query;
+          ss_type = "Facebook"; // Set to Facebook sharing when navigator.share is not available
+        } else {
+          navigator
+            .share({
+              title: title,
+              url: url,
+              text: title
+            })
+            .then(function () { })
+            .catch(function (error) { });
+
+          return false;
+        }
+      }
+
+      // Rest of your code here
+
+      var top = (screen.availHeight - 500) / 2;
+      var left = (screen.availWidth - 500) / 2;
+      var popup = window.open(
+        shareUrl,
+        "social sharing",
+        "width=550,height=420,left=" +
+        left +
+        ",top=" +
+        top +
+        ",location=0,menubar=0,toolbar=0,status=0,scrollbars=1,resizable=1"
+      );
+      return false;
+    }
+
+    jQuery(document).ready(function () {
+      if (navigator.isMobileTablet) {
+        // social sharing btns
+        var socialBtns = jQuery("#social-sharing-btns");
+        var h1Ele = jQuery(".h1-1r-title");
+        if (socialBtns && socialBtns.length && h1Ele && h1Ele.length) {
+          socialBtns.css(
+            "top",
+            h1Ele.offset().top + h1Ele.outerHeight() + 10 + "px"
+          );
+        }
+      }
+
+      //navigator share for mobile
+      if (navigator.isMobile) {
+        jQuery("#social-sharing-btns .button-facebook").addClass("hidden").addClass('d-none');
+      }
+    });
+
+    jQuery(document).ready(function () {
+      if (jQuery('.button-whatsapp').is(":hidden") && jQuery('.button-facebook').is(":hidden") && jQuery('.button-mobile').is(":hidden") && jQuery('.btn-slate-blue').is(":hidden")) {
+        jQuery(".social-close-btn").css({ display: "none", visibility: "hidden" });
+      }
+    });
+
+    //code to close the social share menu
+    jQuery(document).ready(function () {
+      jQuery('#close').on('click', function (e) {
+        e.preventDefault();
+        jQuery('.social-sharing-content').remove();
+      });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
 </html>

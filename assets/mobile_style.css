@@ -1,3 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@400;500&family=Forum&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Telugu', sans-serif !important;
+    scroll-behavior: smooth;
+}
+header {
+    width: 100%;
+    height: 84px;
+    padding: 5px 40px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9;
+    box-shadow: -1px 0px 40px 0px rgba(0, 0, 0, .1);
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.charity {
+    font-size: 1.2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.unorder {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-item {
+    padding: 20px;
+    transition: .3s ease;
+}
+
+.item-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.sub-arrow {
+    line-height: 1;
+    padding: 10px 0 10px 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    display: flex;
+    align-items: center;
+}
+
+.element-btn {
+    padding: 12px 18px 6px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    background-color: #7a45b5;
+    border-radius: 6px;
+}
+
+.element-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.element {
+    margin: 10px;
+}
+
+.donation_details{
+    background-color: #0f0f0f;
+    color: #f1f1f1;
+    padding: 2.5rem 6rem 5rem;
+}
+.donation_details_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 2rem; */
+}
+.donation_details .h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.promo{
+    font-size: 3rem;
+}
+.donateButton{
+    margin-top: 15px;
+    padding: 10px 15px 5px;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 3px;
+    background-color: #114799;
+}
+.donation-promo{
+    width: 55%;
+}
+/* ==============================footer======================= */
+.css-footer-main {
+    display: flex;
+    margin: 20px auto;
+    width: 95%;
+    flex-direction: row;
+}
+
+.css-address {
+    display: flex;
+    width: 33%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.logo-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.css-phone {
+    display: flex;
+    text-align: center;
+}
+
+.css-links {
+    width: 18.333%;
+}
+
+.foot-css-125 h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+.foot-css-125 ul li {
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.foot-css-125 ul li a {
+
+    transition: 0.3s;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    color: black;
+}
+
+.foot-css-125 ul li .icon-f {
+    padding: 0 15px;
+    font-size: 18px;
+    line-height: 1;
+}
+
+.css-account {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 40%;
+}
+
+.css-acc {
+    border: 1px solid sliver;
+    padding: 1.5rem 1.5rem .5rem;
+    width: 100%;
+    margin-top: 10px;
+    background-color: #1f1f1f;
+    border-radius: 6px;
+}
+.css-account_qr{
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.css-d {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 15px;
+}
+.acc-d{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+    font-weight: 500;
+}
+.acc-n{
+    text-align: left;
+    font-weight: 400;
+}
+.qr_img_f{
+    width: 130px;
+    height: 130px;
+}
+.account_qr p{
+    margin: 10px 0;
+}
+.account_qr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .mobile-hamburger {
     display: none;
 }
@@ -119,12 +365,10 @@
     border-radius: 10px;
     transition: 0.4s all ease-in;
 }
-
 .css-item ul li a:hover {
     background: #114799;
     color: #fff;
 }
-
 .css-mobile {
     width: 100%;
     display: block;
@@ -144,7 +388,7 @@
     }
 
     header {
-        padding: 5px 20px;
+        padding: 5px 20px !important;
     }
 
     .mobile-hamburger {
@@ -240,6 +484,7 @@
         margin: 20px 10px 0;
     }
     .css_223_pic_text_img_1 {
+        margin: 0px !important;
         max-width: 330px !important;
     }
     .css-acc {
@@ -264,6 +509,7 @@
     }
 
     .css_223_pic_text_img {
+        margin: 0px !important;
         width: 100% !important;
     }
 
@@ -334,4 +580,21 @@
     .share_elements {
         display: none !important;
     }
+    .css_img_flex_123{
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .img-l{
+        width: 40px;
+        height: 40px;
+    }
+    .title {
+        font-size: 1.3rem !important;
+    }
+    .charity {
+        font-size: 1rem !important;
+    }    
 }
