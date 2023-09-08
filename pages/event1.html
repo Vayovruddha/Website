@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta property="og:image" content="../Images/logo-c.jpg">
   <title>Vayovruddhala Charitable Trust</title>
   <link rel="shortcut icon" href="../Images/logo-c.jpg" />
   <link rel="stylesheet" href="../assets/mobile_style.css" />
@@ -27,6 +28,18 @@
     </div>
   </div>
   <div class="share_elements">
+    <a href="#" id="whatsapp-share-link" onclick="socialSharingButton(event, this, 'WhatsApp')"
+      class="whatsapp share_icons" target="_blank">
+      <iconify-icon icon="ic:round-whatsapp"></iconify-icon>
+    </a>
+    <button onclick="socialSharingButton(event, this, 'Facebook')" class="facebook share_icons">
+      <iconify-icon icon="ic:round-facebook"></iconify-icon>
+    </button>
+    <button onclick="socialSharingButton(event, this, 'Mobile')" class="share share_icons">
+      <iconify-icon icon="mdi:share"></iconify-icon>
+    </button>
+  </div>
+  <div class="share_elements_mobile">
     <a href="#" id="whatsapp-share-link" onclick="socialSharingButton(event, this, 'WhatsApp')"
       class="whatsapp share_icons" target="_blank">
       <iconify-icon icon="ic:round-whatsapp"></iconify-icon>
@@ -105,27 +118,39 @@
     <div class="main">
       <div class="css_125_matter">
         <div class="swiper_images">
-          <swiper-container class="mySwiper" autoplay="true" autoplay-disableOnInteraction="false"
+          <swiper-container class="mySwiper_page" autoplay="true" autoplay-disableOnInteraction="false"
             autoplay-pauseOnMouseEnter="true" autoplay-delay="2000" , loop="true" , pagination="true" grab-cursor="true"
             slides-per-view="auto">
 
             <div class="swiper-slide review-slide">
-              <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111834/Monday%2015th%202022/event_main_jfes3m.jpg" alt="image" class="css_125_matter_img " width="100%" height="650">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111834/Monday%2015th%202022/event_main_jfes3m.jpg"
+                alt="image" class="css_125_matter_img " width="100%" height="650">
             </div>
             <div class="swiper-slide review-slide">
-              <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111821/Monday%2015th%202022/1.5_wejhtt.jpg" alt="image" class="css_125_matter_img " width="100%" height="650">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111821/Monday%2015th%202022/1.5_wejhtt.jpg"
+                alt="image" class="css_125_matter_img " width="100%" height="650">
             </div>
             <div class="swiper-slide review-slide">
-              <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/1.3_u2u6fb.jpg" alt="image" class="css_125_matter_img" width="100%" height="650">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/1.3_u2u6fb.jpg"
+                alt="image" class="css_125_matter_img" width="100%" height="650">
             </div>
             <div class="swiper-slide review-slide">
-              <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111787/Monday%2015th%202022/event_zwh3xz.jpg" alt="image" class="css_125_matter_img" width="100%" height="650">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111787/Monday%2015th%202022/event_zwh3xz.jpg"
+                alt="image" class="css_125_matter_img" width="100%" height="650">
             </div>
             <div class="swiper-slide review-slid">
-              <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112312/Monday%2015th%202022/MBR_0238_sy4qza.jpg" alt="" class="css_125_matter_img" width="100%" height="650">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112312/Monday%2015th%202022/MBR_0238_sy4qza.jpg"
+                alt="" class="css_125_matter_img" width="100%" height="650">
             </div>
             <div class="swiper-slide review-slide">
-              <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111863/Monday%2015th%202022/1.2_iksb89.jpg" alt="" class="css_125_matter_img" width="100%" height="650">
+              <img
+                src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111863/Monday%2015th%202022/1.2_iksb89.jpg"
+                alt="" class="css_125_matter_img" width="100%" height="650">
             </div>
           </swiper-container>
         </div>
@@ -161,7 +186,9 @@
         </p>
         <div class="css_223_pic_text">
           <div>
-            <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111787/Monday%2015th%202022/event_zwh3xz.jpg" alt="image" class="css_223_pic_text_img">
+            <img
+              src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111787/Monday%2015th%202022/event_zwh3xz.jpg"
+              alt="image" class="css_223_pic_text_img">
             <p class="css_title_text">ఇక్కడ వచనాన్ని వ్రాయండి</p>
           </div>
           <p class="css_125_matter_1">
@@ -186,7 +213,9 @@
         </div>
         <div class="css_223_pic_text">
           <div>
-            <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/event1_rdphbd.jpg" alt="image" class="css_223_pic_text_img_1">
+            <img
+              src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/event1_rdphbd.jpg"
+              alt="image" class="css_223_pic_text_img_1">
             <p class="css_title_text">ఇక్కడ వచనాన్ని వ్రాయండి</p>
           </div>
           <p class="css_125_matter_1">
@@ -217,29 +246,29 @@
             <div class="qoute">
               <div class="md-4">
                 <div class="group">
-                  <a href="#" class="group-a">₹4000</a>
+                  <a href="#" class="group-a qr">₹4000</a>
                 </div>
                 <div class="group">
-                  <a href="#" class="group-a">₹2000</a>
+                  <a href="#" class="group-a qr">₹2000</a>
                 </div>
                 <div class="group">
-                  <a href="#" class="group-a">₹1000</a>
+                  <a href="#" class="group-a qr">₹1000</a>
                 </div>
                 <div class="group">
-                  <a href="#" class="group-a">₹600</a>
+                  <a href="#" class="group-a qr">₹600</a>
                 </div>
                 <div class="group">
-                  <a href="#" class="group-a">₹500</a>
+                  <a href="#" class="group-a qr">₹500</a>
                 </div>
                 <div class="group">
-                  <a href="#" class="group-a">₹450</a>
+                  <a href="#" class="group-a qr">₹450</a>
                 </div>
               </div>
             </div>
             <div class="qoute">
               Your Donation Will Support Elderly Care & Social Initiatives
             </div>
-            <div class="pay-btn">
+            <div class="pay-btn qr">
               <a href="#" class="pay-link">Donate and support</a>
             </div>
           </div>
@@ -266,73 +295,91 @@
         కార్యకలాపాలు</h2>
       <div class="gallery-main">
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112326/Monday%2015th%202022/MBR_0243_cmw8wk.jpg" alt="image" class="img-b css-I">
+          <img
+            src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112326/Monday%2015th%202022/MBR_0243_cmw8wk.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111840/Monday%2015th%202022/1.4_rhubdi.jpg" alt="image" class="img-b css-I">
+          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111840/Monday%2015th%202022/1.4_rhubdi.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111855/Monday%2015th%202022/1.1_pqf5nf.jpg" alt="image" class="img-b css-I">
+          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111855/Monday%2015th%202022/1.1_pqf5nf.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112322/Monday%2015th%202022/MBR_0148_hblmyl.jpg" alt="image" class="img-b css-I">
+          <img
+            src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112322/Monday%2015th%202022/MBR_0148_hblmyl.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112320/Monday%2015th%202022/MBR_0221_txxezg.jpg" alt="image" class="img-b css-I">
+          <img
+            src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112320/Monday%2015th%202022/MBR_0221_txxezg.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112328/Monday%2015th%202022/MBR_0126__e7oojm.jpg" alt="image" class="img-b css-I">
+          <img
+            src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112328/Monday%2015th%202022/MBR_0126__e7oojm.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112326/Monday%2015th%202022/MBR_0243_cmw8wk.jpg" alt="image" class="img-b css-I">
+          <img
+            src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694112326/Monday%2015th%202022/MBR_0243_cmw8wk.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111834/Monday%2015th%202022/event_main_jfes3m.jpg" alt="image" class="img-b css-I">
+          <img
+            src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111834/Monday%2015th%202022/event_main_jfes3m.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111765/Monday%2015th%202022/1.6_qzknod.jpg" alt="image" class="img-b css-I">
+          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111765/Monday%2015th%202022/1.6_qzknod.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111821/Monday%2015th%202022/1.5_wejhtt.jpg" alt="image" class="img-b css-I">
+          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111821/Monday%2015th%202022/1.5_wejhtt.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111840/Monday%2015th%202022/1.4_rhubdi.jpg" alt="image" class="img-b css-I">
+          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111840/Monday%2015th%202022/1.4_rhubdi.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
         </div>
         <div class="img-box">
-          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/1.3_u2u6fb.jpg" alt="image" class="img-b css-I">
+          <img src="https://res.cloudinary.com/dcnvlemhq/image/upload/v1694111809/Monday%2015th%202022/1.3_u2u6fb.jpg"
+            alt="image" class="img-b css-I">
           <!-- <div class="css-765">
                     <p>ఇక్కడ వచనాన్ని వ్రాయండి</p>
                 </div> -->
@@ -641,7 +688,7 @@
       var data_title = JSON.parse('{"whatsapp":"Hey, you can now book a FREE 1-hour session with a senior academic counselor to know more about the various courses offered by BYJU\'S. Just call @ 9243500457"}');
 
       if (ss_type === "WhatsApp") {
-        url = url + 'utm_medium=social&utm_source=WhatsApp'
+        // url = url + 'utm_medium=social&utm_source=WhatsApp'
         // if (data_title && data_title.whatsapp) {
         //     url = url + '\n' + data_title.whatsapp;
         // }
@@ -649,7 +696,16 @@
         //     text: url
         // });
         // console.log("Whatsapp-======:", query);
-        shareUrl = "https://" + (isMobileTablet ? 'api' : 'web') + ".whatsapp.com/send?" + query;
+        // shareUrl = "https://" + (isMobileTablet ? 'api' : 'web') + ".whatsapp.com/send?" + query;
+
+
+        // Create the WhatsApp share URL
+        const whatsappShareURL = "https://api.whatsapp.com/send?text=Hello! 🌟 Vayovruddhala Charitable Trust recently conducted a heartwarming program to support and uplift the elderly in our community. 🤝✨%0A%0A📅 Event Date: [Date]%0A⏰ Event Time: [Time]%0A📍 Location: [Location]%0A%0AWe provided essential resources, companionship, and smiles to our beloved seniors. 💖%0A%0ATo learn more about our initiatives and upcoming programs, visit our website:%0A%0A" + url + "%0A%0AYour support matters. 🙏 Join us in making a difference!%0A%0A%23CharityTrust %23CommunitySupport %23ElderlyCare %23VayovruddhalaCharitableTrust";
+
+        // Open WhatsApp with the pre-filled message
+        window.open(whatsappShareURL, "_blank");
+
+
       } else if (ss_type === "Facebook") {
         url = url + 'utm_medium=social&utm_source=Facebook'
         query = jQuery.param({

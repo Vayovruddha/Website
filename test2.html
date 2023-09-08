@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <meta property="og:title" content="Your Page Title">
+    <meta property="og:description" content="Description of your page content">
+    <meta property="og:image" content="Images/logo-c.jpg">
+    <meta property="og:url" content="URL_OF_YOUR_PAGE">
+    <!-- Your meta tags, title, and other head content here -->
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+    <style>
+        .icon:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Your HTML content here -->
+
+
+    <body>
+        <!-- Your HTML content here -->
+
+
+        <a href="whatsapp://send?text=Hello! 🌟 Vayovruddhala Charitable Trust recently conducted a heartwarming program to support and uplift the elderly in our community. 🤝✨%0A%0A📅 Event Date: [Date]%0A⏰ Event Time: [Time]%0A📍 Location: [Location]%0A%0AWe provided essential resources, companionship, and smiles to our beloved seniors. 💖%0A%0ATo learn more about our initiatives and upcoming programs, visit our website: [Website URL]%0A%0AYour support matters. 🙏 Join us in making a difference!%0A%0A%23CharityTrust %23CommunitySupport %23ElderlyCare %23VayovruddhalaCharitableTrust"
+            data-action="share/whatsapp/share" target="_blank">
+            Share with WhatsApp
+        </a>
+
+
+        <div id="whatsapp-icon" class="icon">
+
+            <iconify-icon icon="ic:round-whatsapp" height="50"></iconify-icon>
+
+        </div>
+
+        <script>
+            // Wait for the DOM to load
+            document.addEventListener("DOMContentLoaded", function () {
+                // WhatsApp link element
+                const whatsappLink = document.getElementById("whatsapp-icon");
+
+                // Event listener for WhatsApp link
+                whatsappLink.addEventListener("click", function (event) {
+                    event.preventDefault();
+                    var url;
+                    if (location.search) {
+                        let searchValue = location.search.split("&")[0];
+                        url = "https://" + location.hostname + location.pathname + searchValue + '&';
+                    } else {
+                        url = "https://" + location.hostname + location.pathname + '?';
+                    }
+                    // Create the WhatsApp share URL
+                    const whatsappShareURL = "https://api.whatsapp.com/send?text=Hello! 🌟 Vayovruddhala Charitable Trust recently conducted a heartwarming program to support and uplift the elderly in our community. 🤝✨%0A%0A📅 Event Date: [Date]%0A⏰ Event Time: [Time]%0A📍 Location: [Location]%0A%0AWe provided essential resources, companionship, and smiles to our beloved seniors. 💖%0A%0ATo learn more about our initiatives and upcoming programs, visit our website:%0A%0A"+ url +"%0A%0AYour support matters. 🙏 Join us in making a difference!%0A%0A%23CharityTrust %23CommunitySupport %23ElderlyCare %23VayovruddhalaCharitableTrust";
+
+                    // Open WhatsApp with the pre-filled message
+                    window.open(whatsappShareURL, "_blank");
+                });
+            });
+
+        </script>
+
+        <!-- <a href="#" id="whatsappShareLink" target="_blank">Share via WhatsApp</a>
+
+    <script>
+        document.getElementById('whatsappShareLink').addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            var url;
+            if (location.search) {
+                let searchValue = location.search.split("&")[0];
+                url = "https://" + location.hostname + location.pathname + searchValue + '&';
+            } else {
+                url = "https://" + location.hostname + location.pathname + '?';
+            }
+
+            // Customize the message to share
+            var message = "Check out these activities for seniors: " + url;
+
+            // Encode the message for use in the WhatsApp link
+            var encodedMessage = encodeURIComponent(message);
+
+            // Create the WhatsApp share link with the encoded message
+            var whatsappLink = "whatsapp://send?text=" + encodedMessage;
+
+            // Open WhatsApp with the share link
+            window.open(whatsappLink, '_blank');
+        });
+    </script> -->
+    </body>
+
+</html>
