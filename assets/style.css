@@ -117,7 +117,7 @@
     font-size: 16px;
     line-height: 36px;
     height: auto;
-    padding: 0px 0px -20px ;
+    padding: 0px 0px -20px;
     width: 100%;
     border: 2px solid #dedfe3;
     border-radius: 6px;
@@ -159,30 +159,34 @@
 
 }
 
-.main_box{
-   margin: 20px 150px 0;
+.main_box {
+    margin: 20px 150px 0;
 }
-.card_1{
+
+.card_1 {
     padding: 1.5rem;
     background: #fff;
     overflow: hidden;
     margin-bottom: 50px;
     position: relative;
 }
-.card_1:hover{
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+
+.card_1:hover {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
-.event_css{
+
+.event_css {
     padding: 8px 13px 2px;
     background-color: transparent;
     border: 1px solid #c0c8d8;
     border-radius: 100px;
     letter-spacing: .5px;
-    font-size: 1.2rem;  
+    font-size: 1.2rem;
     display: inline-block;
     margin-bottom: 15px;
 }
-.event_css_1{
+
+.event_css_1 {
     padding: 5px 8px 2px;
     background-color: transparent;
     border: 1px solid #c0c8d8;
@@ -191,26 +195,30 @@
     /* letter-spacing: 1px; */
     display: inline-block;
 }
-.css_12thy{
+
+.css_12thy {
     display: flex;
     gap: 1rem;
     align-items: center;
     flex-wrap: wrap;
 }
-.css_12thyt{
+
+.css_12thyt {
     display: flex;
     gap: 1rem;
     margin-top: 15px;
     align-items: center;
     flex-wrap: wrap;
 }
-.css_234_rty{
+
+.css_234_rty {
     display: flex;
     gap: .7rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
+
 /* ======================programs============== */
 .css-134 {
     text-align: center;
@@ -276,7 +284,11 @@
 .img-b {
     border-radius: 10px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    object-fit: cover;
+    object-fit: fill;
+}
+
+.cs-1245_2 {
+    text-align: justify;
 }
 
 .cs-123 {
@@ -366,7 +378,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     border-radius: 10px;
     border: 1px solid silver;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -378,6 +390,7 @@
 }
 
 .css-rt {
+    text-align: justify;
     padding: 0px 15px;
 }
 
@@ -415,6 +428,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #ccc;
     padding: 10px 20px 5px 20px;
     font-size: 1rem;
     border-radius: 6px;
@@ -480,11 +494,13 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.css-main{
+
+.css-main {
     text-align: center;
     padding-bottom: 20px;
 }
-.view_all_css{
+
+.view_all_css {
 
     padding: 10px 15px 5px;
     text-decoration: none;
@@ -492,8 +508,14 @@
     border-radius: 3px;
     background-color: #114799;
 }
+
+.imag_border {
+    border: 2px solid #ccc;
+    height: 290px;
+}
+
 /* ======================support================== */
-.card_1::after{
+.card_1::after {
     position: absolute;
     content: ' ';
     top: 0;
@@ -504,24 +526,31 @@
     clip-path: circle(12% at 100% 111%);
     transition: .5s;
 }
-.card_1:nth-child(2)::after{
+
+.card_1:nth-child(2)::after {
     background-color: #3498db;
 }
-.card_1:nth-child(3)::after{
+
+.card_1:nth-child(3)::after {
     background-color: #2ecc71;
 }
-.card_1:nth-child(4)::after{
+
+.card_1:nth-child(4)::after {
     background-color: #4534db;
 }
-.card_1:nth-child(5)::after{
+
+.card_1:nth-child(5)::after {
     background-color: #db9334;
 }
-.card_1:nth-child(6)::after{
+
+.card_1:nth-child(6)::after {
     background-color: #34d5db;
 }
-.card_1:nth-child(7)::after{
+
+.card_1:nth-child(7)::after {
     background-color: #ac34db;
 }
-.card_1:nth-child(8)::after{
+
+.card_1:nth-child(8)::after {
     background-color: #77db34;
 }
