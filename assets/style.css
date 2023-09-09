@@ -501,7 +501,7 @@
     width: 100%;
     height: 100%;
     background-color: #e74c3c;
-    clip-path: circle(15% at 100% 111%);
+    clip-path: circle(12% at 100% 111%);
     transition: .5s;
 }
 .card_1:nth-child(2)::after{
