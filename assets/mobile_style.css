@@ -383,6 +383,21 @@ nav {
 }
 
 @media screen and (max-width: 450px) {
+    .overlay_text{
+        bottom: 2rem;
+        border-radius: 8px;
+    }
+    .overlay_text p{
+        font-size: .7rem !important;
+    }
+    .grid_images{
+        margin-top: 20px;
+        grid-template-columns: 1fr;
+        row-gap: 1.2rem;
+    }
+    .highlights{
+        display: none;
+    }
     .nav, .element {
         display: none;
     }

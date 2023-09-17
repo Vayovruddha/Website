@@ -52,6 +52,58 @@
     color: #0884FF;
 }
 
+.swiper-slide {
+    position: relative;
+}
+.swiper-slide .overlay_text p{
+    padding: 1rem 1rem .5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 0 5rem;
+    text-align: center;
+    color:#000;
+    transform: translateY(-50px);
+    opacity: 0;
+}
+.swiper-slide-active .overlay_text p{
+    transform: translateY(0);
+    opacity: 1;
+    transition: 1s ease;
+    transition-delay: 0.3s;
+    transition-property: transform, opacity;
+}
+.overlay_text {
+    position: absolute;
+    bottom: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+/* .overlay_text p {
+    
+    /* animation: slide-down-to-top 1s ease-in-out; */
+
+
+/* Define the animation */
+@keyframes slide-down-to-top {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+
+
 /* ======================================donation-element====================== */
 .donation-element {
     padding: 100px 0px;
@@ -149,6 +201,19 @@
     text-decoration: none;
     font-weight: 600;
 }
+/* ======================highlights============== */
+.highlights{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #f5f5f5;
+    padding: 2rem;
+}
+.images img{
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 
 /* ======================suport============== */
 .support_element {
@@ -220,6 +285,26 @@
 }
 
 /* ======================programs============== */
+.title-i{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 15px 0;
+}
+.grid_images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.2rem;
+}
+.img-box_1{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid silver;
+    padding: 10px 10px 0 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* margin-bottom: 40px; */
+}
 .css-134 {
     text-align: center;
     margin-bottom: 20px;
@@ -346,7 +431,7 @@
 
 .image-wapper {
     padding: 15px;
-    margin: 10px;
+    margin-bottom: 20px;
     background-color: #fff;
     display: flex;
     justify-content: space-around;
