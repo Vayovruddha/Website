@@ -240,10 +240,7 @@ nav {
     text-align: center;
     font-size: .9rem;
 }
-.account_qr img{
-    width: 130px;
-    height: 130px;
-}
+
 .account_qr{
     display: flex;
     flex-direction: column;
